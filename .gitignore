@@ -1,0 +1,17 @@
+# Wirtualne środowisko (nie wysyłamy bibliotek, każdy instaluje je z requirements.txt)
+venv/
+env/
+
+# Zmienne środowiskowe (nigdy nie wysyłaj haseł!)
+.env
+
+# Pliki systemowe Maca (śmieci)
+.DS_Store
+
+# Cache Pythona (skompilowane pliki)
+__pycache__/
+*.pyc
+
+# Ustawienia edytora (opcjonalne, ale warto dodać)
+.vscode/
+.idea/
