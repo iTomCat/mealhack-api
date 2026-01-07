@@ -262,5 +262,7 @@ if __name__ == "__main__":
     app.process_meal([
         ("Batat gotowany", "L"),  # Vision widzi "Frytki z batatów"
         ("Awokado", "M"),
+        ("Miśki zelki", "M"),
+        ("Dupa Biskupa", "S"),
         ("Sos czosnkowy", "M")
     ])
