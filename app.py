@@ -162,6 +162,7 @@ class MetabolicEngine:
             if not product:
                 print(f"   ⚠️ Nieznany produkt: {item_name}")
                 continue
+                # 'continue' nie przechodzi dalej tylko przeskakuje do początku pętli
 
             detected_names.append(product['name'])
             cat = product.get('category', 'Gen')
@@ -263,6 +264,6 @@ if __name__ == "__main__":
         ("Batat gotowany", "L"),  # Vision widzi "Frytki z batatów"
         ("Awokado", "M"),
         ("Miśki zelki", "M"),
-        ("Dupa Biskupa", "S"),
+        ("Dupa Biskupa", "S")
         ("Sos czosnkowy", "M")
     ])

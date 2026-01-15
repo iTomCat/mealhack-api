@@ -1,6 +1,6 @@
 import vertexai
 from vertexai.generative_models import GenerativeModel, GenerationConfig
-import os
+# import os
 
 # --- KONFIGURACJA TWOJEGO PROJEKTU ---
 # Wpisz tu ID swojego projektu z Google Cloud

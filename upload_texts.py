@@ -9,8 +9,6 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 load_dotenv()
 
-#dfdsfsdf
-
 
 PROJECT_ID = os.getenv("PROJECT_ID")
 COLLECTION_NAME = os.getenv("COLLECTION_NAME", "knowledge_base_dev")
