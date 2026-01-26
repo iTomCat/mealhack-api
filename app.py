@@ -3,6 +3,23 @@ import os
 import vertexai
 from vertexai.generative_models import GenerativeModel, GenerationConfig
 
+"""
+🧠 ROLA: Główny Silnik Metaboliczny (Production Logic / RAG Lite)
+
+OPIS:
+To jest serce aplikacji. Ten plik integruje trzy warstwy:
+1. WARSTWA DANYCH (Fakty): Pobiera twarde dane z pliku 'food_database_master.json' (IG, węglowodany, fix_tips).
+2. WARSTWA MATEMATYCZNA (Logika): Oblicza Ładunek Glikemiczny (GL) na podstawie wagi porcji.
+3. WARSTWA AI (Osobowość): Buduje bogaty kontekst (Prompt) na podstawie faktów i wysyła go do Vertex AI.
+
+KLUCZOWA CECHA:
+AI tutaj NIE zgaduje faktów. AI otrzymuje fakty (np. "To jest produkt przetworzony") i ubiera je w formę "Mądrego Kumpla".
+
+UŻYCIE:
+Główny plik do uruchamiania analizy posiłków z wykorzystaniem pełnej wiedzy metabolicznej.
+"""
+
+
 # --- KONFIGURACJA CHMURY ---
 PROJECT_ID = "test-wellness-rag"  # <--- TWOJE ID PROJEKTU
 LOCATION = "us-central1"
@@ -264,6 +281,6 @@ if __name__ == "__main__":
         ("Batat gotowany", "L"),  # Vision widzi "Frytki z batatów"
         ("Awokado", "M"),
         ("Miśki zelki", "M"),
-        ("Dupa Biskupa", "S")
+        ("Dupa Biskupa", "S"),
         ("Sos czosnkowy", "M")
     ])

@@ -2,6 +2,24 @@ import vertexai
 from vertexai.generative_models import GenerativeModel, GenerationConfig
 # import os
 
+"""
+📄 PLIK: testvert.py
+🧪 ROLA: Tester Połączenia i Osobowości (Connectivity / Personality Sandbox)
+
+OPIS:
+To jest prosty skrypt diagnostyczny. Służy TYLKO do dwóch celów:
+1. Sprawdzenie, czy klucz API Google Cloud i biblioteka 'vertexai' działają poprawnie.
+2. Szybkie testowanie "tonu głosu" Coacha (promptu) bez uruchamiania całej matematyki.
+
+KLUCZOWA CECHA:
+Ten plik NIE korzysta z bazy danych ('food_database_master.json') ani nie liczy GL.
+Wszystkie dane o posiłku (np. "GL jest WYSOKI") są wpisane ręcznie (hardcoded/mocked) jako symulacja.
+
+UŻYCIE:
+Uruchom ten plik, gdy zmieniasz projekt w Google Cloud, testujesz nowy model Gemini lub sprawdzasz uprawnienia.
+"""
+
+
 # --- KONFIGURACJA TWOJEGO PROJEKTU ---
 # Wpisz tu ID swojego projektu z Google Cloud
 MY_PROJECT_ID = "test-wellness-rag"

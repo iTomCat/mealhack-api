@@ -361,25 +361,6 @@
         }
     },
     {
-        "id": "2592",
-        "name": "Kukurydza słodka (konserwowa)",
-        "english_name": "Sweet corn, canned, drained",
-        "category": "Cereal Grains",
-        "metrics": {
-            "gi_value": 60,
-            "gi_category": "MEDIUM",
-            "carbs_per_100g": 17.9,
-            "gl_per_serving": 27
-        },
-        "quality_score": {
-            "nova_group": 3,
-            "explanation": "Produkt przetworzony (konserwowanie), zazwyczaj z dodatkiem soli lub cukru w zalewie."
-        },
-        "metabolic_intelligence": {
-            "fix_tip": "Traktuj kukurydzę jako źródło węglowodanów, a nie warzywo; połącz z oliwą z oliwek."
-        }
-    },
-    {
         "id": "2601",
         "name": "Kuskus (gotowany 5 min)",
         "english_name": "Couscous, boiled 5 min",
@@ -415,25 +396,6 @@
         },
         "metabolic_intelligence": {
             "fix_tip": "Kasza jaglana ma wysoki IG; nie rozgotowuj jej i zawsze jedz po porcji białka (np. mięso, strączki)."
-        }
-    },
-    {
-        "id": "2622",
-        "name": "Ryż brązowy (gotowany na parze)",
-        "english_name": "Brown, steamed",
-        "category": "Cereal Grains",
-        "metrics": {
-            "gi_value": 50,
-            "gi_category": "LOW",
-            "carbs_per_100g": 26.0,
-            "gl_per_serving": 23
-        },
-        "quality_score": {
-            "nova_group": 1,
-            "explanation": "Pełne ziarno ryżu, zachowana łuska i zarodek, minimalnie przetworzone."
-        },
-        "metabolic_intelligence": {
-            "fix_tip": "Błonnik w otoczce spowalnia wchłanianie; to znacznie lepszy wybór metaboliczny niż ryż biały."
         }
     },
     {
@@ -665,44 +627,6 @@
         }
     },
     {
-        "id": "3043",
-        "name": "Sok jabłkowy (niesłodzony)",
-        "english_name": "Apple juice, unsweetened",
-        "category": "Fruit and fruit products",
-        "metrics": {
-            "gi_value": 41,
-            "gi_category": "LOW",
-            "carbs_per_100g": 11.4,
-            "gl_per_serving": 8
-        },
-        "quality_score": {
-            "nova_group": 1,
-            "explanation": "Sok 100% (wg definicji NOVA soki bez dodatków to grupa 1, choć pozbawione błonnika)."
-        },
-        "metabolic_intelligence": {
-            "fix_tip": "Płynne kalorie wchłaniają się błyskawicznie; zawsze wybieraj całe jabłko zamiast soku."
-        }
-    },
-    {
-        "id": "3047",
-        "name": "Sok pomarańczowy",
-        "english_name": "Orange juice (Canada 1981)",
-        "category": "Fruit and fruit products",
-        "metrics": {
-            "gi_value": 46,
-            "gi_category": "LOW",
-            "carbs_per_100g": 10.4,
-            "gl_per_serving": 9
-        },
-        "quality_score": {
-            "nova_group": 1,
-            "explanation": "Sok owocowy (prawdopodobnie pasteryzowany), brak błonnika."
-        },
-        "metabolic_intelligence": {
-            "fix_tip": "Brak błonnika powoduje szybszy skok glukozy niż przy całym owocu; pij tylko do posiłku bogatego w błonnik."
-        }
-    },
-    {
         "id": "1804",
         "name": "Marchew gotowana (nieobrana)",
         "english_name": "Carrots, unpeeled, boiled",
@@ -813,7 +737,7 @@
             "explanation": "Warzywo w puszce, produkt przetworzony (konserwacja)."
         },
         "metabolic_intelligence": {
-            "fix_tip": "Traktuj kukurydzę jako węglowodan (jak ryż), a nie warzywo; zawsze łącz z białkiem."
+            "fix_tip": "To skrobia, tak jak ryż (nie warzywo!), a nie warzywo. Aby uniknąć skoku cukru, nigdy nie jedz jej samej dodaj białko lub oliwę."
         }
     },
     {
@@ -1293,7 +1217,7 @@
     },
     {
         "id": "1594",
-        "name": "Czekolada mleczna (Milka)",
+        "name": "Czekolada mleczna",
         "english_name": "Chocolate, milk (Milka, Mondelez, Italy)",
         "category": "Confectionery",
         "metrics": {
@@ -1691,25 +1615,6 @@
         }
     },
     {
-        "id": "114",
-        "name": "Mleko ryżowe (niskotłuszczowe)",
-        "english_name": "Rice milk drink, low-fat, Australia's Own Natural™",
-        "category": "Beverages",
-        "metrics": {
-            "gi_value": 92,
-            "gi_category": "HIGH",
-            "carbs_per_100g": 12.8,
-            "gl_per_serving": 23
-        },
-        "quality_score": {
-            "nova_group": 4,
-            "explanation": "Napój roślinny produkowany przez enzymatyczną hydrolizę skrobi (działa jak cukier)."
-        },
-        "metabolic_intelligence": {
-            "fix_tip": "To w zasadzie płynna glukoza; zamień na niesłodzone mleko sojowe lub migdałowe."
-        }
-    },
-    {
         "id": "111",
         "name": "Yakult (napój probiotyczny)",
         "english_name": "Yakult (Yakult Italia)",
@@ -1935,25 +1840,6 @@
         },
         "metabolic_intelligence": {
             "fix_tip": "Niska gęstość węglowodanów dzięki dużej objętości dodatków; bezpieczna opcja fast-food."
-        }
-    },
-    {
-        "id": "3636",
-        "name": "Frytki (smażone na głębokim oleju)",
-        "english_name": "French Fries, deep-fried in oil for 10 min",
-        "category": "Fast Food / Chips",
-        "metrics": {
-            "gi_value": 42,
-            "gi_category": "LOW",
-            "carbs_per_100g": 21.0,
-            "gl_per_serving": 8
-        },
-        "quality_score": {
-            "nova_group": 4,
-            "explanation": "Produkt smażony w głębokim tłuszczu przemysłowym, często z dodatkiem soli i polepszaczy."
-        },
-        "metabolic_intelligence": {
-            "fix_tip": "Niski IG to pułapka (tłuszcz spowalnia trawienie); to produkt prozapalny, jedz rzadko i zawsze z białkiem."
         }
     },
     {
@@ -2220,6 +2106,158 @@
         },
         "metabolic_intelligence": {
             "fix_tip": "Złoty standard; dodaj łyżkę do każdego posiłku węglowodanowego, aby naturalnie spłaszczyć krzywą glukozową."
+        }
+    },
+    {
+        "id": "BUFFER_001",
+        "name": "Ocet jabłkowy",
+        "english_name": "Vinegar / Apple Cider Vinegar",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 0.0,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 2,
+            "explanation": "Przetworzony składnik kulinarny (fermentacja)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Kwas octowy inaktywuje enzym alfa-amylazę, co spowalnia rozkład skrobi na glukozę."
+        }
+    },
+    {
+        "id": "BUFFER_002",
+        "name": "Oliwa z oliwek",
+        "english_name": "Olive Oil",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 0.0,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 2,
+            "explanation": "Przetworzony składnik kulinarny (tłuszcz ekstrahowany)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Tłuszcz spowalnia opróżnianie żołądka, co łagodzi skok glukozy po posiłku węglowodanowym."
+        }
+    },
+    {
+        "id": "BUFFER_003",
+        "name": "Masło",
+        "english_name": "Butter",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 0.0,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 2,
+            "explanation": "Przetworzony składnik kulinarny (tłuszcz zwierzęcy)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Tłuszcz spożyty przed węglowodanami opóźnia opróżnianie żołądka i stymuluje wydzielanie inkretym."
+        }
+    },
+    {
+        "id": "BUFFER_004",
+        "name": "Orzechy włoskie",
+        "english_name": "Walnuts",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 24,
+            "gi_category": "LOW",
+            "carbs_per_100g": 13.7,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzona żywność (nasiona)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Kombinacja tłuszczu i białka przed węglowodanami stymuluje GLP-1 i spowalnia trawienie."
+        }
+    },
+    {
+        "id": "BUFFER_005",
+        "name": "Migdały",
+        "english_name": "Almonds",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 24,
+            "gi_category": "LOW",
+            "carbs_per_100g": 21.0,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzona żywność (nasiona)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Białko i błonnik w migdałach tworzą fizyczną barierę spowalniającą wchłanianie glukozy."
+        }
+    },
+    {
+        "id": "BUFFER_006",
+        "name": "Awokado",
+        "english_name": "Avocado",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 10,
+            "gi_category": "LOW",
+            "carbs_per_100g": 8.5,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzona żywność (owoc)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Tłuszcze jednonienasycone opóźniają opróżnianie żołądka, buforując wchłanianie cukrów."
+        }
+    },
+    {
+        "id": "BUFFER_007",
+        "name": "Jogurt grecki naturalny",
+        "english_name": "Greek Yogurt, plain",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 17,
+            "gi_category": "LOW",
+            "carbs_per_100g": 3.6,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzona żywność (fermentacja mlekowa)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Białko mleka stymuluje wydzielanie insuliny i GLP-1, redukując glikemię poposiłkową."
+        }
+    },
+    {
+        "id": "BUFFER_008",
+        "name": "Jajko gotowane",
+        "english_name": "Hard-boiled egg",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 1.1,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzona żywność pochodzenia zwierzęcego"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Białko jaja spożyte przed posiłkiem zwiększa sytość i stabilizuje poziom cukru."
         }
     }
 ]
