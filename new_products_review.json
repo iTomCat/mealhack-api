@@ -1,0 +1,49 @@
+[
+    {
+        "meaself._save_to_review_file(rag_results, source_id=meal_unique_id)l_unique_id": "DupaBiskupa666",
+        "source_origin": "RAG_AUTO_GENERATED",
+        "timestamp": "auto",
+        "items": [
+            {
+                "id": "RAG_RYZ_BIALY",
+                "name": "Ryż biały",
+                "english_name": "White rice",
+                "category": "Zboża/Węglowodany",
+                "metrics": {
+                    "gi_value": 73,
+                    "gi_category": "HIGH",
+                    "carbs_per_100g": 28.0,
+                    "gl_per_serving": 0
+                },
+                "quality_score": {
+                    "nova_group": 1,
+                    "explanation": "Gotowany na sypko, biały. Produkt jednoskładnikowy, poddany minimalnej obróbce termicznej (gotowanie)."
+                },
+                "metabolic_intelligence": {
+                    "fix_tip": "Łącz z białkiem i tłuszczem, aby obniżyć ładunek glikemiczny. Schłodzenie ryżu po ugotowaniu zwiększa zawartość skrobi opornej."
+                },
+                "_vision_context_debug": ""
+            },
+            {
+                "id": "RAG_KURCZAK_W_PANIERCE",
+                "name": "Kurczak w panierce (Pierś z kurczaka) (Płatki kukurydziane / Panko) (Smażone na głębokim tłuszczu)",
+                "english_name": "Breaded chicken (Chicken breast) (Corn flakes / Panko) (Deep-fried)",
+                "category": "Mięso/Przetworzone",
+                "metrics": {
+                    "gi_value": 60,
+                    "gi_category": "HIGH",
+                    "carbs_per_100g": 12.0,
+                    "gl_per_serving": 0
+                },
+                "quality_score": {
+                    "nova_group": 4,
+                    "explanation": "Produkt smażony na głębokim tłuszczu, z panierką z płatków kukurydzianych i panko. Zawiera składniki przetworzone (panierka) i jest poddany intensywnej obróbce (smażenie)."
+                },
+                "metabolic_intelligence": {
+                    "fix_tip": "Unikaj smażenia w głębokim tłuszczu. Wybieraj pieczone lub grillowane mięso bez panierki. Panierka i smażenie zwiększają ładunek glikemiczny i kaloryczność."
+                },
+                "_vision_context_debug": ""
+            }
+        ]
+    }
+]

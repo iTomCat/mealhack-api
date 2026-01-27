@@ -1,13 +1,15 @@
 import json
 import os
-import vertexai
-from vertexai.generative_models import GenerativeModel, GenerationConfig
+from rag_agent import RagBatchAgent
 
+
+# --------------------------------------------------------------
 """
+PObieranie danych JSON z RAG
 🧠 ROLA: Główny Silnik Metaboliczny (Production Logic / RAG Lite)
 
 OPIS:
-To jest serce aplikacji. Ten plik integruje trzy warstwy:
+Ten plik integruje trzy warstwy:
 1. WARSTWA DANYCH (Fakty): Pobiera twarde dane z pliku 'food_database_master.json' (IG, węglowodany, fix_tips).
 2. WARSTWA MATEMATYCZNA (Logika): Oblicza Ładunek Glikemiczny (GL) na podstawie wagi porcji.
 3. WARSTWA AI (Osobowość): Buduje bogaty kontekst (Prompt) na podstawie faktów i wysyła go do Vertex AI.
@@ -18,269 +20,311 @@ AI tutaj NIE zgaduje faktów. AI otrzymuje fakty (np. "To jest produkt przetworz
 UŻYCIE:
 Główny plik do uruchamiania analizy posiłków z wykorzystaniem pełnej wiedzy metabolicznej.
 """
+# --------------------------------------------------------------
 
-
-# --- KONFIGURACJA CHMURY ---
-PROJECT_ID = "test-wellness-rag"  # <--- TWOJE ID PROJEKTU
-LOCATION = "us-central1"
-MODEL_NAME = "gemini-2.5-flash"
-
-# --- KONFIGURACJA BAZY ---
-DATABASE_FILE = 'food_database_master.json'
-
-DEFAULT_PORTIONS = {
-    "rice": 150, "pasta": 150, "potatoes": 150, "cereal grains": 150,
-    "breads": 70, "bakery products": 80,
-    "meat": 150, "fish": 150, "eggs": 120,
-    "vegetables": 150, "fruit": 120,
-    "sauces": 30, "fats": 15, "nuts": 30,
-    "snacks": 50, "beverages": 250, "soft drinks": 330
-}
-SIZE_MULTIPLIERS = {"S": 0.5, "M": 1.0, "L": 1.5, "XL": 2.0}
-
-
-class AICoach:
-    def __init__(self):
-        print(f"🔌 Łączenie z Mózgiem AI ({MODEL_NAME})...")
-        try:
-            vertexai.init(project=PROJECT_ID, location=LOCATION)
-            self.model = GenerativeModel(MODEL_NAME)
-            print("✅ AI Podłączone.")
-        except Exception as e:
-            print(f"❌ Błąd AI: {e}")
-            self.model = None
-
-    def get_advice(self, meal_items, gl_score, gl_level, missing, database_tips):
-        if not self.model:
-            return "Brak połączenia z AI. (Tryb offline)"
-
-        # Formatowanie tipów dla AI
-        tips_context = "\n".join([f"- {item}: {tip}" for item, tip in database_tips]
-                                 ) if database_tips else "Brak specyficznych uwag w bazie."
-
-        # --- OSOBOWOŚĆ COACHA (WINGMAN) ---
-
-        #  CEL: Budowanie więzi i hackowanie biologii (Glucose Goddess).
-        prompt = f"""
-        JESTEŚ: AI Health Coachem - "Mądrym Kumplem" (Wingman).
-        CEL: Budowanie zdrowych nawyków poprzez wiedzę, a nie zakazy.
-        TON: Ciepły, luźny, wspierający. Traktuj użytkownika jak inteligentnego przyjaciela.
-        
-        DANE O POSIŁKU:
-        - Co widzę: {', '.join(meal_items)}
-        - Ładunek Glikemiczny (GL): {gl_score:.1f} ({gl_level})
-        - Czego brakuje (Bufor): {', '.join(missing) if missing else "Nic"}
-
-        BAZA WIEDZY O PRODUKTACH (Twoja ściąga):
-        {tips_context}
-        (Użyj tych informacji, żeby Twoja porada była merytoryczna i dopasowana do konkretnych składników!)
-
-        TWOJE ZADANIE (Wybierz odpowiedni scenariusz i napisz wiadomość - max 3-4 zdania):
-        
-        SCENARIUSZ 1: GL WYSOKI/KRYTYCZNY (>20) (np. Pizza, Frytki):
-           - Doceń jedzenie ("Brzmi pysznie!", "Ale uczta!").
-           - Nie strasz "zjazdem", ale zaproponuj "Fix" (Bufor).
-           - Jeśli masz TIP w bazie (np. o łączeniu składników), użyj go.
-           - Jeśli nie masz tipa, a brakuje bufora -> "Zjedz najpierw [to co w Buforze] z lodówki".
-
-        SCENARIUSZ 2: GL ŚREDNI (10-20) (Solidny posiłek):
-           - Pochwal za dobry wybór i balans.
-           - Jeśli w bazie jest ciekawostka (np. o błonniku/tłuszczu), wspomnij o niej edukacyjnie.
-           - Daj opcjonalny tip (np. "Delektuj się każdym kęsem").
-
-        SCENARIUSZ 3: GL NISKI (<10) (np. Jajka, Sałatka, Keto):
-           - PEŁEN ENTUZJAZM! ("Jesteś mistrzynią!", "Paliwo rakietowe!").
-           - Wyjaśnij DLACZEGO to jest super (np. "Dzięki [Składnik z bazy] Twój cukier będzie stabilny jak skała").
-           - Buduj poczucie sprawczości ("Widzisz? Małe zmiany dają wielki efekt!").
-        
-
-        ZASADY JĘZYKOWE:
-        1. RÓŻNE OTWARCIA: Nie zaczynaj ciągle od wykrzyknień ("Uuu", "Ooo", "Wow"). To brzmi sztucznie.
-           - Raz zacznij od nazwy dania ("Frytki z batatów? Klasyk!").
-           - Innym razem od pytania ("Głodna? Wygląda to konkretnie").
-        2. SŁOWNIK ZAKAZANY: "dieta", "kalorie", "grzech", "nie wolno", "źle", "otyli".
-        3. NIGDY nie oceniaj negatywnie. Jeśli jedzenie jest "niezdrowe", znajdź sposób, by zminimalizować szkody (fix).
-        4. FORMAT: Krótka wiadomość na czacie (max 3-4 zdania), konkretnie, z empatią.
-        5. WAŻNE: Zawsze kończ wypowiedź pełnym zdaniem. Nie urywaj myśli.
-
-        Twoja wiadomość:
-        """
-
-        try:
-            response = self.model.generate_content(
-                prompt,
-                generation_config=GenerationConfig(
-                    temperature=0.7,
-                    max_output_tokens=1024,
-                    top_p=0.95,
-                    top_k=40  # Dodane dla stabilności przy wyższej temperaturze
-                )
-            )
-            return response.text.strip()
-        except Exception as e:
-            return f"Błąd generowania: {e}"
+# --- KONFIGURACJA ŚCIEŻEK ---
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATABASE_FILE = os.path.join(BASE_DIR, 'food_database_master.json')
+REVIEW_FILE = os.path.join(BASE_DIR, 'new_products_review.json')
 
 
 class MetabolicEngine:
     def __init__(self, db_file):
         self.db_path = db_file
-        self.db = self._load_database()
-        self.coach = AICoach()  # Inicjalizacja Vertex AI wewnątrz silnika
-        print(f"✅ BAZA DANYCH: {len(self.db)} produktów.")
+        self.db = self._load_json(self.db_path)
+
+        # Inicjalizacja Agenta RAG
+        self.rag_agent = RagBatchAgent()
+
+        if len(self.db) > 0:
+            print(f"✅ BAZA LOKALNA: {len(self.db)} produktów.")
+        else:
+            print("⚠️ BAZA LOKALNA PUSTA.")
         print("-" * 50)
 
-    def _load_database(self):
-        if not os.path.exists(self.db_path):
+    def _load_json(self, path):
+        """Uniwersalna funkcja do ładowania JSON"""
+        if not os.path.exists(path):
             return []
         try:
-            with open(self.db_path, 'r', encoding='utf-8') as f:
+            with open(path, 'r', encoding='utf-8') as f:
                 return json.load(f)
-        except json.JSONDecodeError:
+        except Exception as e:
+            print(f"❌ Błąd ładowania {path}: {e}")
             return []
 
-    def find_product(self, query):
-        query = query.lower()
-        # Mały słownik mapowania dla Vision AI (ułatwienie)
-        if "frytki z batatów" in query:
-            query = "batat"
+    def _save_to_review_file(self, new_items, source_id="UNKNOWN"):
+        """
+        Zapisuje produkty z RAG do pliku 'new_products_review.json'.
+        STRUKTURA: Grupuje produkty pod konkretnym ID posiłku (Wrapper).
+        DEDUPLIKACJA: Sprawdza, czy paczka o danym ID już istnieje.
+        """
+        if not new_items:
+            return
 
-        results = [p for p in self.db if query in p['name'].lower()
-                   or query in p['english_name'].lower()]
-        return results[0] if results else None
+        current_review_list = self._load_json(REVIEW_FILE)
 
-    def get_weight(self, category, size_code):
-        base = 100
-        for key, val in DEFAULT_PORTIONS.items():
-            if key in category.lower():
-                base = val
-                break
-        return base * SIZE_MULTIPLIERS.get(size_code, 1.0)
+        # --- KROK 1: Sprawdzenie duplikatów po ID posiłku ---
+        # Zbieramy ID wszystkich paczek, które już są w pliku
+        existing_meal_ids = {entry.get('meal_unique_id')
+                             for entry in current_review_list}
 
-    #
-    #
-    #
-    #
-    #
-    #
-    # ------------------------------------------------------------------------------------
+        if source_id in existing_meal_ids:
+            # Tego chcieliśmy: komunikat i przerwanie funkcji
+            print(
+                f"INFO: Paczka '{source_id}' już istnieje w pliku review, pominięto zapis.")
+            return
+        # ----------------------------------------------------
 
-    def process_meal(self, vision_items):
-        """Główna pętla przetwarzania"""
-        print(f"\n📸 FOTO-ANALIZA: Wykryto {len(vision_items)} składników...")
+        print(
+            f"💾 Zapisywanie {len(new_items)} produktów do nowej paczki '{source_id}'...")
 
-        total_gl = 0
-        meal_composition = {"Carbs": 0, "Fiber": 0, "Fat": 0}
-        detected_names = []
-        expert_tips = []
+        # 2. Przygotowujemy listę produktów dla TEGO KONKRETNEGO posiłku
+        meal_products_list = []
 
-        # 1. Matematyka (Obliczanie GL)
-        for item_name, size in vision_items:
-            product = self.find_product(item_name)
-            if not product:
-                print(f"   ⚠️ Nieznany produkt: {item_name}")
-                continue
-                # 'continue' nie przechodzi dalej tylko przeskakuje do początku pętli
+        for item in new_items:
+            metrics = item.get('metrics', {})
+            gi_val = metrics.get('gi_value', 0)
+            gi_cat = metrics.get('gi_category')
+            if not gi_cat:
+                if gi_val < 55:
+                    gi_cat = "LOW"
+                elif gi_val < 70:
+                    gi_cat = "MEDIUM"
+                else:
+                    gi_cat = "HIGH"
 
-            detected_names.append(product['name'])
-            cat = product.get('category', 'Gen')
-            weight = self.get_weight(cat, size)
+            clean_product_entry = {
+                "id": item.get('id'),
+                "name": item.get('name'),
+                "english_name": item.get('english_name', item.get('name')),
+                "category": item.get('category', 'Gen'),
+                "metrics": {
+                    "gi_value": gi_val,
+                    "gi_category": gi_cat,
+                    "carbs_per_100g": metrics.get('carbs_per_100g', 0),
+                    "gl_per_serving": 0
+                },
+                "quality_score": item.get('quality_score', {}),
+                "metabolic_intelligence": item.get('metabolic_intelligence', {}),
+                "_vision_context_debug": item.get('original_description', '')
+            }
 
-            # --- A. Obliczanie GL
-            gl = (product['metrics']['carbs_per_100g'] *
-                  weight / 100) * product['metrics']['gi_value'] / 100
-            total_gl += gl
+            meal_products_list.append(clean_product_entry)
 
-            # --- B. ZBIERANIE INTELIGENCJI  ---
-            #
-            # Pobieramy dane z JSON
-            tip = product.get('metabolic_intelligence', {}).get('fix_tip')
-            explanation = product.get('quality_score', {}).get('explanation')
-            nova = product.get('quality_score', {}).get('nova_group', 1)
+        # 3. Tworzymy WRAPPER
+        meal_wrapper = {
+            "meal_unique_id": source_id,
+            "source_origin": "RAG_AUTO_GENERATED",
+            "timestamp": "auto",
+            "items": meal_products_list
+        }
 
-            # Budujemy "paczkę wiedzy" dla AI
-            context_string = ""
+        # 4. Dodajemy i zapisujemy
+        current_review_list.append(meal_wrapper)
 
-            # 1. Ostrzeżenie o przetworzeniu (tylko jeśli NOVA >= 4)
-            if nova >= 4:
-                context_string += f"[UWAGA: Ultra-przetworzone (NOVA 4)!] "
+        try:
+            with open(REVIEW_FILE, 'w', encoding='utf-8') as f:
+                json.dump(current_review_list, f, indent=4, ensure_ascii=False)
+            print(
+                f"✅ Dodano paczkę {source_id} z {len(meal_products_list)} produktami do review.")
+        except Exception as e:
+            print(f"❌ Błąd zapisu review: {e}")
 
-            # 2. Wyjaśnienie dlaczego to jest złe/dobre
-            if explanation:
-                context_string += f"{explanation} "
+    def _clean_product_name(self, raw_name):
+        """
+        Zmienia: 'Kurczak (Pierś) w płatkach' -> 'Kurczak Pierś w płatkach'
+        Usuwa nawiasy, które mylą wyszukiwarkę, ale ZACHOWUJE treść (np. rodzaj panierki).
+        """
+        # Zamień nawiasy na spacje
+        clean = raw_name.replace('(', ' ').replace(')', ' ').replace('/', ' ')
+        # Usuń podwójne spacje i białe znaki
+        clean = ' '.join(clean.split())
+        return clean
 
-            # 3. Konkretna porada
-            if tip:
-                context_string += f"Rada: {tip}"
+    def find_product_local(self, query_name):
+        """Inteligentne wyszukiwanie lokalne (Strict Match)."""
+        query_lower = query_name.lower()
+        # Tutaj query_name jest już oczyszczone przez _clean_product_name
+        clean_query = query_lower.replace(',', '')
+        query_tokens = set(clean_query.split())
 
-            # Jeśli zebraliśmy jakiekolwiek info, dodajemy do listy dla Coacha
-            if context_string:
-                expert_tips.append((product['name'], context_string))
+        SAFE_EXTRAS = {'gotowany', 'surowy', 'tradycyjny', 'zwykły',
+                       'na', 'parze', 'w', 'wodzie', 'smażony', 'pieczony'}
 
-            # Analiza składu
-            if gl > 10:
-                meal_composition["Carbs"] += 1
-            if "vegetable" in cat.lower() or "salad" in cat.lower():
-                meal_composition["Fiber"] += 1
-            if "fat" in cat.lower() or "sauce" in cat.lower() or "nuts" in cat.lower() or "egg" in cat.lower() or "meat" in cat.lower() or "cheese" in cat.lower():
-                meal_composition["Fat"] += 1
+        for db_product in self.db:
+            db_name_lower = db_product['name'].lower()
 
-        # 2. Diagnoza poziomu GL
-        gl_level = "Niski"
-        if total_gl > 35:
-            gl_level = "Krytyczny"
-        elif total_gl > 20:
-            gl_level = "Wysoki"
-        elif total_gl > 10:
-            gl_level = "Średni"
+            # Level 1: Exact
+            if query_lower == db_name_lower:
+                return db_product
 
-        # 3. Sprawdzanie czego brakuje
-        missing = []
-        if meal_composition["Carbs"] > 0:
-            if meal_composition["Fiber"] == 0:
-                missing.append("Błonnik")
-            if meal_composition["Fat"] == 0:
-                missing.append("Białko")
+            # Level 2: Smart Subset
+            clean_db = db_name_lower.replace(
+                '(', '').replace(')', '').replace(',', '')
+            db_tokens = set(clean_db.split())
 
-        # 4. Wyświetlanie wyników w konsoli
-        print(f"DETECTED NAMES: {detected_names}")
-        print(f"MEAL COMPOSITION: {meal_composition}")
+            if query_tokens.issubset(db_tokens):
+                extra_words = db_tokens - query_tokens
+                dangerous_extras = extra_words - SAFE_EXTRAS
+                if not dangerous_extras:
+                    return db_product
+        return None
 
-        print(f"📊 WYNIK: Ładunek Glikemiczny {total_gl:.1f} ({gl_level})")
+    def process_meal(self, meal_json):
 
-        if expert_tips:
-            print("🧠 WIEDZA Z BAZY (Kontekst dla AI) >>>>>>>>>>>>>>>>>>>>>>>>>")
-            for item, tip in expert_tips:
-                print(f"   - {item}: {tip}")
+        meta = meal_json.get('meta', {})
+        meal_unique_id = meta.get('meal_unique_id', 'MANUAL_TEST')
 
-        print("-" * 50)
+        ingredients = meal_json.get('skladniki', [])
+        print(f"\n📸 ANALIZA DANYCH: {len(ingredients)} składników...")
 
-        # 5. Wywołanie AI Coacha
+        products_to_process = []
+        missing_items_map = {}
 
-        # advice = self.coach.get_advice(
-        #     detected_names, total_gl, gl_level, missing, expert_tips)
+        # 1. Weryfikacja
+        for item in ingredients:
+            raw_name = item.get('nazwa', 'Unknown')
+            weight = item.get('waga_g', 0)
+            raw_state = item.get('stan', '')
 
-        # print("💬 WIADOMOŚĆ NA CZACIE:")
-        # print(advice)
-        # print("=" * 50)
+            # --- NAPRAWA 1: CZYSZCZENIE NAZWY ---
+            clean_name = self._clean_product_name(raw_name)
+
+            # Budujemy bogaty opis dla RAG (Stan + Oryginalna nazwa z nawiasami)
+            full_description = f"{raw_state}. Oryginalna nazwa: {raw_name}"
+
+            local_product = self.find_product_local(clean_name)
+
+            if local_product:
+                print(f"   ✅ Znaleziono lokalnie: {clean_name}")
+                p_copy = local_product.copy()
+                p_copy['serving_weight_g'] = weight
+                p_copy['original_description'] = full_description
+                p_copy['source_type'] = 'LOCAL_DB'
+                products_to_process.append(p_copy)
+            else:
+                print(
+                    f"   🔸 Brak ścisłego dopasowania: '{clean_name}' (Oryginał: {raw_name})")
+                missing_items_map[clean_name] = {
+                    'weight': weight,
+                    'desc': full_description
+                }
+
+        # 2. RAG Batch
+        if missing_items_map:
+            # --- NAPRAWA 2: Budujemy listę SŁOWNIKÓW dla rag_agent ---
+            rag_input_data = []
+            for c_name, data in missing_items_map.items():
+                rag_input_data.append({
+                    'name': c_name,       # Czysta nazwa (do szukania w PDF)
+                    'description': data['desc']  # Bogaty opis (do analizy)
+                })
+
+            # Wysyłamy słowniki, a nie same nazwy!
+            rag_results = self.rag_agent.resolve_batch(rag_input_data)
+
+            # Zapis do review
+            self._save_to_review_file(rag_results, source_id=meal_unique_id)
+
+            for rag_item in rag_results:
+                name = rag_item.get('name')
+
+                # Próbujemy odzyskać dane po nazwie zwróconej przez RAG
+                input_data = missing_items_map.get(name)
+
+                # Fallback - jeśli RAG lekko zmienił nazwę
+                if not input_data:
+                    found_key = next(
+                        (k for k in missing_items_map if k in name or name in k), None)
+                    input_data = missing_items_map[found_key] if found_key else list(
+                        missing_items_map.values())[0]
+
+                rag_item['id'] = f"RAG_{name.replace(' ', '_')}"
+                rag_item['serving_weight_g'] = input_data['weight']
+                rag_item['original_description'] = input_data['desc']
+                rag_item['source_type'] = 'RAG_GENERATED'
+
+                products_to_process.append(rag_item)
+
+        # 3. Finalne Formatowanie
+        final_json_output = []
+
+        print(
+            f"\n🧮 GENEROWANIE JSON DLA {len(products_to_process)} ELEMENTÓW...")
+
+        for product in products_to_process:
+            weight = product.get('serving_weight_g', 0)
+            metrics = product.get('metrics', {})
+            carbs = metrics.get('carbs_per_100g', 0)
+            gi = metrics.get('gi_value', 0)
+
+            gl = (carbs * weight / 100) * gi / 100
+
+            gi_cat = metrics.get('gi_category')
+            if not gi_cat:
+                if gi < 55:
+                    gi_cat = "LOW"
+                elif gi < 70:
+                    gi_cat = "MEDIUM"
+                else:
+                    gi_cat = "HIGH"
+
+            meal_item_json = {
+                "id": product.get("id"),
+                "name": product["name"],
+                "category": product.get('category', 'Gen'),
+                "metrics": {
+                    "gi_value": int(gi),
+                    "gi_category": gi_cat,
+                    "carbs_per_100g": float(carbs),
+                    "gl_per_serving": round(gl, 1),
+                    "serving_size_g": int(weight)
+                },
+                "quality_score": {
+                    "nova_group": product.get("quality_score", {}).get("nova_group", 1),
+                    "explanation": product.get("quality_score", {}).get("explanation", "")
+                },
+                "vision_context": {
+                    "detailed_description": product.get('original_description', ''),
+                    "user_input_name": product["name"]
+                },
+                "metabolic_intelligence": {
+                    "fix_tip": product.get("metabolic_intelligence", {}).get("fix_tip", "")
+                },
+                "source": product.get("source_type", "UNKNOWN")
+            }
+            final_json_output.append(meal_item_json)
+
+        return final_json_output
 
 
-# ------------------------------------------------------------
-#
-#
-#
-#
-# --- URUCHOMIENIE TESTOWE ---
 if __name__ == "__main__":
-    app = MetabolicEngine(DATABASE_FILE)
+    engine = MetabolicEngine(DATABASE_FILE)
 
-    print("\n🧪 TESTUJEMY TYLKO SCENARIUSZ 1: Loaded Frytki")
+    print("\n🧪 TEST: Traceability ID (Nested Meta)")
 
-    # Scenariusz 1: Loaded Frytki (Wysoki GL, ale z tłuszczem)
-    # Sprawdzamy, czy AI zauważy brak warzyw (błonnika) i zaproponuje "Fix"
-    app.process_meal([
-        ("Batat gotowany", "L"),  # Vision widzi "Frytki z batatów"
-        ("Awokado", "M"),
-        ("Miśki zelki", "M"),
-        ("Dupa Biskupa", "S"),
-        ("Sos czosnkowy", "M")
-    ])
+    # Symulacja danych z Vision (Nowa struktura)
+    input_json_data = {
+        "meta": {
+            "meal_unique_id": "DupaBiskupa666",
+            "talerz_srednica_mm": 240,
+            "calkowita_waga_g": 481
+        },
+        "skladniki": [
+            {
+                "nazwa": "Ryż biały",
+                "waga_g": 247,
+                "stan": "Gotowany na sypko, biały"
+            },
+            {
+                "nazwa": "Kurczak w panierce (Pierś z kurczaka) (Płatki kukurydziane / Panko) (Smażone na głębokim tłuszczu)",
+                "waga_g": 234,
+                "stan": "Smażone kawałki fileta w złocistej, chrupiącej panierce"
+            }
+        ]
+    }
+
+    result = engine.process_meal(input_json_data)
+
+    print("\n✅ Koniec testu.")

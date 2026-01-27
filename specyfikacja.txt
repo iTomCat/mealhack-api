@@ -1,0 +1,23 @@
+1. Inteligentna Analiza Wizualna (AI Nutri-Score)
+1.1 Wizualny Nutri-Score (Jakość)
+Szybkie zdjęcie posiłku, które AI zamienia na ocenę 1-10. Zamiast liczenia kalorii, system analizuje gęstość odżywczą, stopień przetworzenia i proporcje składników na talerzu.
+• Co robi użytkownik: Robi zdjęcie obiadu.
+• Co robi Gemini: Analizuje proporcje.
+	○ Przykład: Zdjęcie pizzy.
+	○ Werdykt: "Ocena: 4/10. Dużo przetworzonych węglowodanów, tłuszcz nasycony. Mało błonnika."
+	○ Przykład: Zdjęcie pizzy z dużą sałatką obok.
+	○ Werdykt: "Ocena: 7/10. Sałatka dodała błonnik i witaminy, co spowolni wchłanianie cukrów z pizzy. Dobra robota!"
+• Dlaczego to działa: Uczy łączenia pokarmów, a nie odmawiania sobie jedzenia.
+
+1.2 Glucose Predictor (Glikemia)
+Symulacja wpływu posiłku na poziom cukru we krwi. AI ostrzega przed „zjazdem energetycznym” (skokiem insuliny), analizując stosunek węglowodanów prostych do błonnika i białka.
+To jest obecnie bardzo modny temat (trend "Glucose Goddess"). Ludzie chcą unikać "zjazdu energetycznego" po jedzeniu.
+	• Funkcja: Na podstawie zdjęcia, AI przewiduje, jak bardzo ten posiłek podniesie poziom cukru we krwi i czy użytkownik będzie śpiący za godzinę.
+	• Porada w czasie rzeczywistym: "Widzę makaron. Zjedz najpierw te warzywa z talerza, żeby zmniejszyć skok cukru o 30%."
+
+1.3 Tryb "Napraw mój posiłek" (Fix my meal)
+Natychmiastowa porada, jak uratować posiłek. AI podpowiada konkretny ruch: „Zjedz najpierw te warzywa” lub „Dodaj łyżkę jogurtu”, aby obniżyć ładunek glikemiczny dania o 30-40%.
+Użytkownik robi zdjęcie kanapki z białego chleba z dżemem.
+	• AI (Diagnoza): "Czerwony alarm! Czysty cukier. Za godzinę zaśniesz."
+	• AI (Naprawa): "Masz w kuchni orzechy albo jogurt grecki? Zjedz je PRZED tą kanapką. Tłuszcz i białko stworzą bufor i zmniejszą skok cukru o 40%. Smacznego!"
+To jest magia. Nie zabraniasz jedzenia. Mówisz, jak zjeść to mądrzej (hackowanie biologii).
