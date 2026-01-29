@@ -7,8 +7,7 @@
         "metrics": {
             "gi_value": 67,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 58.1,
-            "gl_per_serving": 20
+            "carbs_per_100g": 58.1
         },
         "quality_score": {
             "nova_group": 4,
@@ -26,8 +25,7 @@
         "metrics": {
             "gi_value": 55,
             "gi_category": "LOW",
-            "carbs_per_100g": 52.0,
-            "gl_per_serving": 17
+            "carbs_per_100g": 52.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -45,8 +43,7 @@
         "metrics": {
             "gi_value": 68,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 48.5,
-            "gl_per_serving": 20
+            "carbs_per_100g": 48.5
         },
         "quality_score": {
             "nova_group": 4,
@@ -64,8 +61,7 @@
         "metrics": {
             "gi_value": 60,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 51.5,
-            "gl_per_serving": 18
+            "carbs_per_100g": 51.5
         },
         "quality_score": {
             "nova_group": 4,
@@ -83,8 +79,7 @@
         "metrics": {
             "gi_value": 77,
             "gi_category": "HIGH",
-            "carbs_per_100g": 48.8,
-            "gl_per_serving": 23
+            "carbs_per_100g": 48.8
         },
         "quality_score": {
             "nova_group": 4,
@@ -102,8 +97,7 @@
         "metrics": {
             "gi_value": 77,
             "gi_category": "HIGH",
-            "carbs_per_100g": 37.3,
-            "gl_per_serving": 23
+            "carbs_per_100g": 37.3
         },
         "quality_score": {
             "nova_group": 4,
@@ -121,8 +115,7 @@
         "metrics": {
             "gi_value": 73,
             "gi_category": "HIGH",
-            "carbs_per_100g": 49.7,
-            "gl_per_serving": 11
+            "carbs_per_100g": 49.7
         },
         "quality_score": {
             "nova_group": 4,
@@ -140,8 +133,7 @@
         "metrics": {
             "gi_value": 95,
             "gi_category": "HIGH",
-            "carbs_per_100g": 51.0,
-            "gl_per_serving": 14
+            "carbs_per_100g": 51.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -159,8 +151,7 @@
         "metrics": {
             "gi_value": 75,
             "gi_category": "HIGH",
-            "carbs_per_100g": 39.4,
-            "gl_per_serving": 11
+            "carbs_per_100g": 39.4
         },
         "quality_score": {
             "nova_group": 3,
@@ -178,8 +169,7 @@
         "metrics": {
             "gi_value": 54,
             "gi_category": "LOW",
-            "carbs_per_100g": 37.3,
-            "gl_per_serving": 8
+            "carbs_per_100g": 37.3
         },
         "quality_score": {
             "nova_group": 3,
@@ -197,8 +187,7 @@
         "metrics": {
             "gi_value": 69,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 39.0,
-            "gl_per_serving": 10
+            "carbs_per_100g": 39.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -216,8 +205,7 @@
         "metrics": {
             "gi_value": 71,
             "gi_category": "HIGH",
-            "carbs_per_100g": 46.7,
-            "gl_per_serving": 11
+            "carbs_per_100g": 46.7
         },
         "quality_score": {
             "nova_group": 4,
@@ -235,8 +223,7 @@
         "metrics": {
             "gi_value": 96,
             "gi_category": "HIGH",
-            "carbs_per_100g": 36.2,
-            "gl_per_serving": 14
+            "carbs_per_100g": 36.2
         },
         "quality_score": {
             "nova_group": 4,
@@ -254,8 +241,7 @@
         "metrics": {
             "gi_value": 55,
             "gi_category": "LOW",
-            "carbs_per_100g": 45.9,
-            "gl_per_serving": 8
+            "carbs_per_100g": 45.9
         },
         "quality_score": {
             "nova_group": 3,
@@ -273,8 +259,7 @@
         "metrics": {
             "gi_value": 38,
             "gi_category": "LOW",
-            "carbs_per_100g": 70.8,
-            "gl_per_serving": 8
+            "carbs_per_100g": 70.8
         },
         "quality_score": {
             "nova_group": 4,
@@ -292,8 +277,7 @@
         "metrics": {
             "gi_value": 77,
             "gi_category": "HIGH",
-            "carbs_per_100g": 84.7,
-            "gl_per_serving": 15
+            "carbs_per_100g": 84.7
         },
         "quality_score": {
             "nova_group": 4,
@@ -311,8 +295,7 @@
         "metrics": {
             "gi_value": 63,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 60.4,
-            "gl_per_serving": 13
+            "carbs_per_100g": 60.4
         },
         "quality_score": {
             "nova_group": 1,
@@ -330,8 +313,7 @@
         "metrics": {
             "gi_value": 95,
             "gi_category": "HIGH",
-            "carbs_per_100g": 87.7,
-            "gl_per_serving": 19
+            "carbs_per_100g": 87.7
         },
         "quality_score": {
             "nova_group": 4,
@@ -349,8 +331,7 @@
         "metrics": {
             "gi_value": 23,
             "gi_category": "LOW",
-            "carbs_per_100g": 23.0,
-            "gl_per_serving": 10
+            "carbs_per_100g": 23.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -368,8 +349,7 @@
         "metrics": {
             "gi_value": 62,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 23.0,
-            "gl_per_serving": 28
+            "carbs_per_100g": 23.0
         },
         "quality_score": {
             "nova_group": 3,
@@ -387,8 +367,7 @@
         "metrics": {
             "gi_value": 89,
             "gi_category": "HIGH",
-            "carbs_per_100g": 24.0,
-            "gl_per_serving": 40
+            "carbs_per_100g": 24.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -406,8 +385,7 @@
         "metrics": {
             "gi_value": 56,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 28.0,
-            "gl_per_serving": 25
+            "carbs_per_100g": 28.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -425,8 +403,7 @@
         "metrics": {
             "gi_value": 96,
             "gi_category": "HIGH",
-            "carbs_per_100g": 30.0,
-            "gl_per_serving": 43
+            "carbs_per_100g": 30.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -444,8 +421,7 @@
         "metrics": {
             "gi_value": 28,
             "gi_category": "LOW",
-            "carbs_per_100g": 11.0,
-            "gl_per_serving": 4
+            "carbs_per_100g": 11.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -463,8 +439,7 @@
         "metrics": {
             "gi_value": 30,
             "gi_category": "LOW",
-            "carbs_per_100g": 21.5,
-            "gl_per_serving": 5
+            "carbs_per_100g": 21.5
         },
         "quality_score": {
             "nova_group": 1,
@@ -482,8 +457,7 @@
         "metrics": {
             "gi_value": 48,
             "gi_category": "LOW",
-            "carbs_per_100g": 19.2,
-            "gl_per_serving": 7
+            "carbs_per_100g": 19.2
         },
         "quality_score": {
             "nova_group": 1,
@@ -501,8 +475,7 @@
         "metrics": {
             "gi_value": 52,
             "gi_category": "LOW",
-            "carbs_per_100g": 68.8,
-            "gl_per_serving": 8
+            "carbs_per_100g": 68.8
         },
         "quality_score": {
             "nova_group": 1,
@@ -520,8 +493,7 @@
         "metrics": {
             "gi_value": 51,
             "gi_category": "LOW",
-            "carbs_per_100g": 15.1,
-            "gl_per_serving": 8
+            "carbs_per_100g": 15.1
         },
         "quality_score": {
             "nova_group": 1,
@@ -539,8 +511,7 @@
         "metrics": {
             "gi_value": 58,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 14.7,
-            "gl_per_serving": 9
+            "carbs_per_100g": 14.7
         },
         "quality_score": {
             "nova_group": 3,
@@ -558,8 +529,7 @@
         "metrics": {
             "gi_value": 35,
             "gi_category": "LOW",
-            "carbs_per_100g": 36.9,
-            "gl_per_serving": 5
+            "carbs_per_100g": 36.9
         },
         "quality_score": {
             "nova_group": 1,
@@ -577,8 +547,7 @@
         "metrics": {
             "gi_value": 50,
             "gi_category": "LOW",
-            "carbs_per_100g": 72.5,
-            "gl_per_serving": 8
+            "carbs_per_100g": 72.5
         },
         "quality_score": {
             "nova_group": 1,
@@ -596,8 +565,7 @@
         "metrics": {
             "gi_value": 80,
             "gi_category": "HIGH",
-            "carbs_per_100g": 5.0,
-            "gl_per_serving": 12
+            "carbs_per_100g": 5.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -615,8 +583,7 @@
         "metrics": {
             "gi_value": 56,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 13.1,
-            "gl_per_serving": 8
+            "carbs_per_100g": 13.1
         },
         "quality_score": {
             "nova_group": 3,
@@ -634,8 +601,7 @@
         "metrics": {
             "gi_value": 32,
             "gi_category": "LOW",
-            "carbs_per_100g": 6.1,
-            "gl_per_serving": 3
+            "carbs_per_100g": 6.1
         },
         "quality_score": {
             "nova_group": 1,
@@ -653,8 +619,7 @@
         "metrics": {
             "gi_value": 52,
             "gi_category": "LOW",
-            "carbs_per_100g": 10.0,
-            "gl_per_serving": 5
+            "carbs_per_100g": 10.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -672,8 +637,7 @@
         "metrics": {
             "gi_value": 47,
             "gi_category": "LOW",
-            "carbs_per_100g": 21.3,
-            "gl_per_serving": 9
+            "carbs_per_100g": 21.3
         },
         "quality_score": {
             "nova_group": 1,
@@ -691,8 +655,7 @@
         "metrics": {
             "gi_value": 62,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 16.7,
-            "gl_per_serving": 12
+            "carbs_per_100g": 16.7
         },
         "quality_score": {
             "nova_group": 1,
@@ -710,8 +673,7 @@
         "metrics": {
             "gi_value": 52,
             "gi_category": "LOW",
-            "carbs_per_100g": 18.0,
-            "gl_per_serving": 5
+            "carbs_per_100g": 18.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -729,8 +691,7 @@
         "metrics": {
             "gi_value": 47,
             "gi_category": "LOW",
-            "carbs_per_100g": 17.9,
-            "gl_per_serving": 9
+            "carbs_per_100g": 17.9
         },
         "quality_score": {
             "nova_group": 3,
@@ -748,8 +709,7 @@
         "metrics": {
             "gi_value": 111,
             "gi_category": "HIGH",
-            "carbs_per_100g": 15.8,
-            "gl_per_serving": 22
+            "carbs_per_100g": 15.8
         },
         "quality_score": {
             "nova_group": 1,
@@ -767,8 +727,7 @@
         "metrics": {
             "gi_value": 41,
             "gi_category": "LOW",
-            "carbs_per_100g": 20.0,
-            "gl_per_serving": 8
+            "carbs_per_100g": 20.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -786,8 +745,7 @@
         "metrics": {
             "gi_value": 42,
             "gi_category": "LOW",
-            "carbs_per_100g": 21.0,
-            "gl_per_serving": 8
+            "carbs_per_100g": 21.0
         },
         "quality_score": {
             "nova_group": 3,
@@ -805,8 +763,7 @@
         "metrics": {
             "gi_value": 88,
             "gi_category": "HIGH",
-            "carbs_per_100g": 15.0,
-            "gl_per_serving": 18
+            "carbs_per_100g": 15.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -824,8 +781,7 @@
         "metrics": {
             "gi_value": 58,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 32.0,
-            "gl_per_serving": 26
+            "carbs_per_100g": 32.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -843,8 +799,7 @@
         "metrics": {
             "gi_value": 79,
             "gi_category": "HIGH",
-            "carbs_per_100g": 32.0,
-            "gl_per_serving": 36
+            "carbs_per_100g": 32.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -862,8 +817,7 @@
         "metrics": {
             "gi_value": 50,
             "gi_category": "LOW",
-            "carbs_per_100g": 26.0,
-            "gl_per_serving": 23
+            "carbs_per_100g": 26.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -881,8 +835,7 @@
         "metrics": {
             "gi_value": 88,
             "gi_category": "HIGH",
-            "carbs_per_100g": 30.0,
-            "gl_per_serving": 40
+            "carbs_per_100g": 30.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -900,8 +853,7 @@
         "metrics": {
             "gi_value": 44,
             "gi_category": "LOW",
-            "carbs_per_100g": 30.0,
-            "gl_per_serving": 18
+            "carbs_per_100g": 30.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -919,8 +871,7 @@
         "metrics": {
             "gi_value": 35,
             "gi_category": "LOW",
-            "carbs_per_100g": 28.0,
-            "gl_per_serving": 14
+            "carbs_per_100g": 28.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -938,8 +889,7 @@
         "metrics": {
             "gi_value": 78,
             "gi_category": "HIGH",
-            "carbs_per_100g": 30.0,
-            "gl_per_serving": 31
+            "carbs_per_100g": 30.0
         },
         "quality_score": {
             "nova_group": 3,
@@ -957,8 +907,7 @@
         "metrics": {
             "gi_value": 46,
             "gi_category": "LOW",
-            "carbs_per_100g": 20.0,
-            "gl_per_serving": 18
+            "carbs_per_100g": 20.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -976,8 +925,7 @@
         "metrics": {
             "gi_value": 61,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 28.0,
-            "gl_per_serving": 24
+            "carbs_per_100g": 28.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -995,8 +943,7 @@
         "metrics": {
             "gi_value": 59,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 22.0,
-            "gl_per_serving": 24
+            "carbs_per_100g": 22.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -1014,8 +961,7 @@
         "metrics": {
             "gi_value": 39,
             "gi_category": "LOW",
-            "carbs_per_100g": 25.0,
-            "gl_per_serving": 16
+            "carbs_per_100g": 25.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -1033,8 +979,7 @@
         "metrics": {
             "gi_value": 3,
             "gi_category": "LOW",
-            "carbs_per_100g": 5.0,
-            "gl_per_serving": 0
+            "carbs_per_100g": 5.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -1052,8 +997,7 @@
         "metrics": {
             "gi_value": 19,
             "gi_category": "LOW",
-            "carbs_per_100g": 7.4,
-            "gl_per_serving": 1
+            "carbs_per_100g": 7.4
         },
         "quality_score": {
             "nova_group": 1,
@@ -1071,8 +1015,7 @@
         "metrics": {
             "gi_value": 45,
             "gi_category": "LOW",
-            "carbs_per_100g": 7.9,
-            "gl_per_serving": 2
+            "carbs_per_100g": 7.9
         },
         "quality_score": {
             "nova_group": 4,
@@ -1090,8 +1033,7 @@
         "metrics": {
             "gi_value": 43,
             "gi_category": "LOW",
-            "carbs_per_100g": 16.5,
-            "gl_per_serving": 4
+            "carbs_per_100g": 16.5
         },
         "quality_score": {
             "nova_group": 3,
@@ -1109,8 +1051,7 @@
         "metrics": {
             "gi_value": 92,
             "gi_category": "HIGH",
-            "carbs_per_100g": 12.8,
-            "gl_per_serving": 23
+            "carbs_per_100g": 12.8
         },
         "quality_score": {
             "nova_group": 4,
@@ -1128,8 +1069,7 @@
         "metrics": {
             "gi_value": 58,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 19.0,
-            "gl_per_serving": 12
+            "carbs_per_100g": 19.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -1147,8 +1087,7 @@
         "metrics": {
             "gi_value": 30,
             "gi_category": "LOW",
-            "carbs_per_100g": 7.3,
-            "gl_per_serving": 8
+            "carbs_per_100g": 7.3
         },
         "quality_score": {
             "nova_group": 4,
@@ -1166,8 +1105,7 @@
         "metrics": {
             "gi_value": 72,
             "gi_category": "HIGH",
-            "carbs_per_100g": 55.6,
-            "gl_per_serving": 18
+            "carbs_per_100g": 55.6
         },
         "quality_score": {
             "nova_group": 4,
@@ -1185,8 +1123,7 @@
         "metrics": {
             "gi_value": 84,
             "gi_category": "HIGH",
-            "carbs_per_100g": 80.0,
-            "gl_per_serving": 21
+            "carbs_per_100g": 80.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -1204,8 +1141,7 @@
         "metrics": {
             "gi_value": 72,
             "gi_category": "HIGH",
-            "carbs_per_100g": 75.8,
-            "gl_per_serving": 18
+            "carbs_per_100g": 75.8
         },
         "quality_score": {
             "nova_group": 4,
@@ -1223,8 +1159,7 @@
         "metrics": {
             "gi_value": 54,
             "gi_category": "LOW",
-            "carbs_per_100g": 58.1,
-            "gl_per_serving": 14
+            "carbs_per_100g": 58.1
         },
         "quality_score": {
             "nova_group": 4,
@@ -1242,8 +1177,7 @@
         "metrics": {
             "gi_value": 23,
             "gi_category": "LOW",
-            "carbs_per_100g": 52.6,
-            "gl_per_serving": 6
+            "carbs_per_100g": 52.6
         },
         "quality_score": {
             "nova_group": 4,
@@ -1261,8 +1195,7 @@
         "metrics": {
             "gi_value": 25,
             "gi_category": "LOW",
-            "carbs_per_100g": 54.7,
-            "gl_per_serving": 6
+            "carbs_per_100g": 54.7
         },
         "quality_score": {
             "nova_group": 4,
@@ -1280,8 +1213,7 @@
         "metrics": {
             "gi_value": 29,
             "gi_category": "LOW",
-            "carbs_per_100g": 78.6,
-            "gl_per_serving": 7
+            "carbs_per_100g": 78.6
         },
         "quality_score": {
             "nova_group": 4,
@@ -1299,8 +1231,7 @@
         "metrics": {
             "gi_value": 59,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 100.0,
-            "gl_per_serving": 3
+            "carbs_per_100g": 100.0
         },
         "quality_score": {
             "nova_group": 2,
@@ -1318,8 +1249,7 @@
         "metrics": {
             "gi_value": 59,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 78.1,
-            "gl_per_serving": 3
+            "carbs_per_100g": 78.1
         },
         "quality_score": {
             "nova_group": 2,
@@ -1337,8 +1267,7 @@
         "metrics": {
             "gi_value": 24,
             "gi_category": "LOW",
-            "carbs_per_100g": 100.0,
-            "gl_per_serving": 1
+            "carbs_per_100g": 100.0
         },
         "quality_score": {
             "nova_group": 2,
@@ -1356,8 +1285,7 @@
         "metrics": {
             "gi_value": 21,
             "gi_category": "LOW",
-            "carbs_per_100g": 25.0,
-            "gl_per_serving": 3
+            "carbs_per_100g": 25.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -1375,8 +1303,7 @@
         "metrics": {
             "gi_value": 31,
             "gi_category": "LOW",
-            "carbs_per_100g": 27.0,
-            "gl_per_serving": 5
+            "carbs_per_100g": 27.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -1394,8 +1321,7 @@
         "metrics": {
             "gi_value": 6,
             "gi_category": "LOW",
-            "carbs_per_100g": 21.1,
-            "gl_per_serving": 1
+            "carbs_per_100g": 21.1
         },
         "quality_score": {
             "nova_group": 3,
@@ -1413,8 +1339,7 @@
         "metrics": {
             "gi_value": 23,
             "gi_category": "LOW",
-            "carbs_per_100g": 23.0,
-            "gl_per_serving": 3
+            "carbs_per_100g": 23.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -1432,8 +1357,7 @@
         "metrics": {
             "gi_value": 22,
             "gi_category": "LOW",
-            "carbs_per_100g": 20.0,
-            "gl_per_serving": 3
+            "carbs_per_100g": 20.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -1451,8 +1375,7 @@
         "metrics": {
             "gi_value": 14,
             "gi_category": "LOW",
-            "carbs_per_100g": 3.6,
-            "gl_per_serving": 2
+            "carbs_per_100g": 3.6
         },
         "quality_score": {
             "nova_group": 3,
@@ -1470,8 +1393,7 @@
         "metrics": {
             "gi_value": 25,
             "gi_category": "LOW",
-            "carbs_per_100g": 20.7,
-            "gl_per_serving": 1
+            "carbs_per_100g": 20.7
         },
         "quality_score": {
             "nova_group": 1,
@@ -1489,8 +1411,7 @@
         "metrics": {
             "gi_value": 7,
             "gi_category": "LOW",
-            "carbs_per_100g": 8.3,
-            "gl_per_serving": 0
+            "carbs_per_100g": 8.3
         },
         "quality_score": {
             "nova_group": 1,
@@ -1508,8 +1429,7 @@
         "metrics": {
             "gi_value": 66,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 3.1,
-            "gl_per_serving": 7
+            "carbs_per_100g": 3.1
         },
         "quality_score": {
             "nova_group": 3,
@@ -1527,8 +1447,7 @@
         "metrics": {
             "gi_value": 42,
             "gi_category": "LOW",
-            "carbs_per_100g": 11.4,
-            "gl_per_serving": 8
+            "carbs_per_100g": 11.4
         },
         "quality_score": {
             "nova_group": 1,
@@ -1546,8 +1465,7 @@
         "metrics": {
             "gi_value": 41,
             "gi_category": "LOW",
-            "carbs_per_100g": 8.9,
-            "gl_per_serving": 8
+            "carbs_per_100g": 8.9
         },
         "quality_score": {
             "nova_group": 1,
@@ -1565,8 +1483,7 @@
         "metrics": {
             "gi_value": 38,
             "gi_category": "LOW",
-            "carbs_per_100g": 1.1,
-            "gl_per_serving": 4
+            "carbs_per_100g": 1.1
         },
         "quality_score": {
             "nova_group": 1,
@@ -1584,8 +1501,7 @@
         "metrics": {
             "gi_value": 72,
             "gi_category": "HIGH",
-            "carbs_per_100g": 11.1,
-            "gl_per_serving": 18
+            "carbs_per_100g": 11.1
         },
         "quality_score": {
             "nova_group": 4,
@@ -1603,8 +1519,7 @@
         "metrics": {
             "gi_value": 89,
             "gi_category": "HIGH",
-            "carbs_per_100g": 5.8,
-            "gl_per_serving": 22
+            "carbs_per_100g": 5.8
         },
         "quality_score": {
             "nova_group": 4,
@@ -1622,8 +1537,7 @@
         "metrics": {
             "gi_value": 51,
             "gi_category": "LOW",
-            "carbs_per_100g": 14.7,
-            "gl_per_serving": 13
+            "carbs_per_100g": 14.7
         },
         "quality_score": {
             "nova_group": 4,
@@ -1641,8 +1555,7 @@
         "metrics": {
             "gi_value": 95,
             "gi_category": "HIGH",
-            "carbs_per_100g": 17.0,
-            "gl_per_serving": 24
+            "carbs_per_100g": 17.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -1660,8 +1573,7 @@
         "metrics": {
             "gi_value": 56,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 52.1,
-            "gl_per_serving": 20
+            "carbs_per_100g": 52.1
         },
         "quality_score": {
             "nova_group": 3,
@@ -1679,8 +1591,7 @@
         "metrics": {
             "gi_value": 48,
             "gi_category": "LOW",
-            "carbs_per_100g": 36.2,
-            "gl_per_serving": 17
+            "carbs_per_100g": 36.2
         },
         "quality_score": {
             "nova_group": 3,
@@ -1698,8 +1609,7 @@
         "metrics": {
             "gi_value": 45,
             "gi_category": "LOW",
-            "carbs_per_100g": 20.8,
-            "gl_per_serving": 16
+            "carbs_per_100g": 20.8
         },
         "quality_score": {
             "nova_group": 3,
@@ -1717,8 +1627,7 @@
         "metrics": {
             "gi_value": 65,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 28.2,
-            "gl_per_serving": 26
+            "carbs_per_100g": 28.2
         },
         "quality_score": {
             "nova_group": 4,
@@ -1736,8 +1645,7 @@
         "metrics": {
             "gi_value": 48,
             "gi_category": "LOW",
-            "carbs_per_100g": 20.0,
-            "gl_per_serving": 19
+            "carbs_per_100g": 20.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -1755,8 +1663,7 @@
         "metrics": {
             "gi_value": 73,
             "gi_category": "HIGH",
-            "carbs_per_100g": 20.4,
-            "gl_per_serving": 26
+            "carbs_per_100g": 20.4
         },
         "quality_score": {
             "nova_group": 3,
@@ -1774,8 +1681,7 @@
         "metrics": {
             "gi_value": 35,
             "gi_category": "LOW",
-            "carbs_per_100g": 15.0,
-            "gl_per_serving": 12
+            "carbs_per_100g": 15.0
         },
         "quality_score": {
             "nova_group": 3,
@@ -1793,8 +1699,7 @@
         "metrics": {
             "gi_value": 27,
             "gi_category": "LOW",
-            "carbs_per_100g": 11.3,
-            "gl_per_serving": 3
+            "carbs_per_100g": 11.3
         },
         "quality_score": {
             "nova_group": 4,
@@ -1812,8 +1717,7 @@
         "metrics": {
             "gi_value": 37,
             "gi_category": "LOW",
-            "carbs_per_100g": 11.5,
-            "gl_per_serving": 13
+            "carbs_per_100g": 11.5
         },
         "quality_score": {
             "nova_group": 3,
@@ -1831,8 +1735,7 @@
         "metrics": {
             "gi_value": 52,
             "gi_category": "LOW",
-            "carbs_per_100g": 9.4,
-            "gl_per_serving": 18
+            "carbs_per_100g": 9.4
         },
         "quality_score": {
             "nova_group": 3,
@@ -1850,8 +1753,7 @@
         "metrics": {
             "gi_value": 76,
             "gi_category": "HIGH",
-            "carbs_per_100g": 19.6,
-            "gl_per_serving": 15
+            "carbs_per_100g": 19.6
         },
         "quality_score": {
             "nova_group": 4,
@@ -1869,8 +1771,7 @@
         "metrics": {
             "gi_value": 62,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 39.2,
-            "gl_per_serving": 9
+            "carbs_per_100g": 39.2
         },
         "quality_score": {
             "nova_group": 4,
@@ -1888,8 +1789,7 @@
         "metrics": {
             "gi_value": 67,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 6.0,
-            "gl_per_serving": 7
+            "carbs_per_100g": 6.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -1907,8 +1807,7 @@
         "metrics": {
             "gi_value": 78,
             "gi_category": "HIGH",
-            "carbs_per_100g": 59.9,
-            "gl_per_serving": 25
+            "carbs_per_100g": 59.9
         },
         "quality_score": {
             "nova_group": 3,
@@ -1926,8 +1825,7 @@
         "metrics": {
             "gi_value": 61,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 49.7,
-            "gl_per_serving": 19
+            "carbs_per_100g": 49.7
         },
         "quality_score": {
             "nova_group": 4,
@@ -1945,8 +1843,7 @@
         "metrics": {
             "gi_value": 38,
             "gi_category": "LOW",
-            "carbs_per_100g": 20.0,
-            "gl_per_serving": 12
+            "carbs_per_100g": 20.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -1964,8 +1861,7 @@
         "metrics": {
             "gi_value": 10,
             "gi_category": "LOW",
-            "carbs_per_100g": 1.8,
-            "gl_per_serving": 0
+            "carbs_per_100g": 1.8
         },
         "quality_score": {
             "nova_group": 1,
@@ -1983,8 +1879,7 @@
         "metrics": {
             "gi_value": 0,
             "gi_category": "LOW",
-            "carbs_per_100g": 0.5,
-            "gl_per_serving": 0
+            "carbs_per_100g": 0.5
         },
         "quality_score": {
             "nova_group": 3,
@@ -2002,8 +1897,7 @@
         "metrics": {
             "gi_value": 0,
             "gi_category": "LOW",
-            "carbs_per_100g": 0.6,
-            "gl_per_serving": 0
+            "carbs_per_100g": 0.6
         },
         "quality_score": {
             "nova_group": 4,
@@ -2021,8 +1915,7 @@
         "metrics": {
             "gi_value": 0,
             "gi_category": "LOW",
-            "carbs_per_100g": 1.5,
-            "gl_per_serving": 0
+            "carbs_per_100g": 1.5
         },
         "quality_score": {
             "nova_group": 4,
@@ -2040,8 +1933,7 @@
         "metrics": {
             "gi_value": 19,
             "gi_category": "LOW",
-            "carbs_per_100g": 4.5,
-            "gl_per_serving": 1
+            "carbs_per_100g": 4.5
         },
         "quality_score": {
             "nova_group": 3,
@@ -2059,8 +1951,7 @@
         "metrics": {
             "gi_value": 55,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 26.0,
-            "gl_per_serving": 5
+            "carbs_per_100g": 26.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -2078,8 +1969,7 @@
         "metrics": {
             "gi_value": 60,
             "gi_category": "MEDIUM",
-            "carbs_per_100g": 40.0,
-            "gl_per_serving": 8
+            "carbs_per_100g": 40.0
         },
         "quality_score": {
             "nova_group": 4,
@@ -2097,8 +1987,7 @@
         "metrics": {
             "gi_value": 0,
             "gi_category": "LOW",
-            "carbs_per_100g": 0.0,
-            "gl_per_serving": 0
+            "carbs_per_100g": 0.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -2116,8 +2005,7 @@
         "metrics": {
             "gi_value": 0,
             "gi_category": "LOW",
-            "carbs_per_100g": 0.0,
-            "gl_per_serving": 0
+            "carbs_per_100g": 0.0
         },
         "quality_score": {
             "nova_group": 2,
@@ -2135,8 +2023,7 @@
         "metrics": {
             "gi_value": 0,
             "gi_category": "LOW",
-            "carbs_per_100g": 0.0,
-            "gl_per_serving": 0
+            "carbs_per_100g": 0.0
         },
         "quality_score": {
             "nova_group": 2,
@@ -2154,8 +2041,7 @@
         "metrics": {
             "gi_value": 0,
             "gi_category": "LOW",
-            "carbs_per_100g": 0.0,
-            "gl_per_serving": 0
+            "carbs_per_100g": 0.0
         },
         "quality_score": {
             "nova_group": 2,
@@ -2173,8 +2059,7 @@
         "metrics": {
             "gi_value": 24,
             "gi_category": "LOW",
-            "carbs_per_100g": 13.7,
-            "gl_per_serving": 1
+            "carbs_per_100g": 13.7
         },
         "quality_score": {
             "nova_group": 1,
@@ -2192,8 +2077,7 @@
         "metrics": {
             "gi_value": 24,
             "gi_category": "LOW",
-            "carbs_per_100g": 21.0,
-            "gl_per_serving": 1
+            "carbs_per_100g": 21.0
         },
         "quality_score": {
             "nova_group": 1,
@@ -2211,8 +2095,7 @@
         "metrics": {
             "gi_value": 10,
             "gi_category": "LOW",
-            "carbs_per_100g": 8.5,
-            "gl_per_serving": 1
+            "carbs_per_100g": 8.5
         },
         "quality_score": {
             "nova_group": 1,
@@ -2230,8 +2113,7 @@
         "metrics": {
             "gi_value": 17,
             "gi_category": "LOW",
-            "carbs_per_100g": 3.6,
-            "gl_per_serving": 1
+            "carbs_per_100g": 3.6
         },
         "quality_score": {
             "nova_group": 1,
@@ -2249,8 +2131,7 @@
         "metrics": {
             "gi_value": 0,
             "gi_category": "LOW",
-            "carbs_per_100g": 1.1,
-            "gl_per_serving": 0
+            "carbs_per_100g": 1.1
         },
         "quality_score": {
             "nova_group": 1,

@@ -110,7 +110,6 @@ class MetabolicEngine:
                     "gi_value": gi_val,
                     "gi_category": gi_cat,
                     "carbs_per_100g": metrics.get('carbs_per_100g', 0),
-                    "gl_per_serving": 0
                 },
                 "quality_score": item.get('quality_score', {}),
                 "metabolic_intelligence": item.get('metabolic_intelligence', {}),
@@ -277,7 +276,8 @@ class MetabolicEngine:
                     gi_cat = "MEDIUM"
                 else:
                     gi_cat = "HIGH"
-
+            # TO jest przekazywane do następnego zapytania AI
+            # SPrawdzić obliczanie GL czy waga w obliczeniu jest OK
             meal_item_json = {
                 "id": product.get("id"),
                 "name": product["name"],

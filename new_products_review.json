@@ -2,47 +2,45 @@
     {
         "meal_unique_id": "DupaBiskupa666",
         "source_origin": "RAG_BATCH_PROCESS",
-        "timestamp": "2026-01-29 21:22:47",
+        "timestamp": "2026-01-29 22:56:28",
         "items": [
             {
                 "id": "RAG_RYZ_BIALY",
                 "name": "Ryż biały",
                 "english_name": "White rice",
-                "category": "Zboża i węglowodany",
+                "category": "Grains/Carbohydrates",
                 "metrics": {
-                    "gi_value": 70,
+                    "gi_value": 72,
                     "gi_category": "HIGH",
-                    "carbs_per_100g": 21.2,
-                    "gl_per_serving": 0
+                    "carbs_per_100g": 33.8
                 },
                 "quality_score": {
                     "nova_group": 1,
-                    "explanation": "Ryż biały jest produktem minimalnie przetworzonym, poddanym jedynie obróbce mechanicznej (mielenie) i termicznej (gotowanie)."
+                    "explanation": "Ryż biały jest produktem minimalnie przetworzonym, powstałym poprzez usunięcie łuski i otrębów z ziarna ryżu."
                 },
                 "metabolic_intelligence": {
-                    "fix_tip": "Zjedz najpierw warzywa"
+                    "fix_tip": "Spożywaj ryż biały po produktach bogatych w błonnik i białko, aby spowolnić wchłanianie glukozy. Schłodzenie ryżu po ugotowaniu i ponowne podgrzanie może zwiększyć zawartość skrobi opornej, obniżając jego indeks glikemiczny."
                 },
                 "source_origin": "Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021., NOVA (Classification Sheet)"
             },
             {
-                "id": "RAG_KURCZAK_PANIERKA_SMAZONE",
+                "id": "RAG_KURCZAK_PANIERKA",
                 "name": "Kurczak w panierce Pierś z kurczaka Płatki kukurydziane Panko Smażone na głębokim tłuszczu",
                 "english_name": "Chicken breast, breaded, deep-fried",
-                "category": "Mięso i drób",
+                "category": "Meat/Processed Food",
                 "metrics": {
-                    "gi_value": 70,
-                    "gi_category": "HIGH",
-                    "carbs_per_100g": 20.0,
-                    "gl_per_serving": 0
+                    "gi_value": 65,
+                    "gi_category": "MEDIUM",
+                    "carbs_per_100g": 20.0
                 },
                 "quality_score": {
                     "nova_group": 4,
-                    "explanation": "Produkt ultra-przetworzony ze względu na panierkę (panko/płatki kukurydziane) oraz smażenie na głębokim tłuszczu, co wiąże się z użyciem przemysłowych składników i technik obróbki. Pasuje do kategorii 'pre-prepared poultry and fish ‘nuggets’ and ‘sticks’' z dokumentacji NOVA."
+                    "explanation": "Produkt jest panierowany i smażony na głębokim tłuszczu, co klasyfikuje go jako ultra-przetworzony ze względu na dodatek składników (panierka, olej) i metody przygotowania."
                 },
                 "metabolic_intelligence": {
-                    "fix_tip": "Zjedz najpierw warzywa"
+                    "fix_tip": "Ze względu na wysoką zawartość tłuszczu i przetworzenie (NOVA 4), zaleca się spożywanie tego produktu sporadycznie i w umiarkowanych ilościach. Łącz go z dużą porcją świeżych warzyw, aby zwiększyć zawartość błonnika i składników odżywczych."
                 },
-                "source_origin": "Estimation based on Vision & General Knowledge, NOVA (Classification Sheet), Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021."
+                "source_origin": "Estimation based on Vision & General Knowledge, Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021., NOVA (Classification Sheet)"
             }
         ]
     }

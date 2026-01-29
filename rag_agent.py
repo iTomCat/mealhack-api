@@ -161,8 +161,13 @@ class RagBatchAgent:
            - Oddziel nazwy przecinkami.
            - Jeśli dane są szacowane na podstawie opisu wizualnego (np. panierka), wpisz: "Estimation based on Vision & General Knowledge".
 
-        4. PORADA (Fix Tip):
-           - Jeśli wysoki IG lub NOVA 4 -> Porada z pliku Kubota (np. "Zjedz najpierw warzywa").
+        4. PORADA METABOLICZNA (Fix Tip - Intelligence):
+           - ZAKAZ: Nie używaj ogólnych fraz typu "Zjedz najpierw warzywa", jeśli nie wynikają one z kontekstu.
+           - KONTEKST: Przeanalizuj fragmenty z pliku "KUBOTA" (lub wiedzę ogólną), które dotyczą tego typu produktu (węglowodany / tłuszcze / cukry).
+           - LOGIKA:
+             A) Jeśli produkt to węglowodany proste/skrobia (np. ryż, chleb, ziemniaki) -> Zasugeruj kolejność jedzenia (np. "Najpierw błonnik/białko") lub metodę przygotowania (np. "schłodzenie").
+             B) Jeśli produkt to NOVA 4 (ultra-przetworzony) -> Zasugeruj ograniczenie porcji lub łączenie ze zdrowymi dodatkami.
+             C) Jeśli produkt jest bezpieczny (NOVA 1, niski IG) -> Wpisz: "Produkt bezpieczny metabolicznie".
 
         DANE WEJŚCIOWE:
         {aggregated_context}
@@ -180,11 +185,10 @@ class RagBatchAgent:
             "metrics": {{
               "gi_value": 70, (int)
               "gi_category": "HIGH",
-              "carbs_per_100g": 28.0, (float)
-              "gl_per_serving": 0
+              "carbs_per_100g": 28.0 (float)
             }},
             "quality_score": {{
-              "nova_group": 1, 
+              "nova_group": 1,
               "explanation": "..."
             }},
             "metabolic_intelligence": {{
