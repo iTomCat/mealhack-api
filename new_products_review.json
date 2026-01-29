@@ -1,48 +1,50 @@
 [
     {
-        "meaself._save_to_review_file(rag_results, source_id=meal_unique_id)l_unique_id": "DupaBiskupa666",
-        "source_origin": "RAG_AUTO_GENERATED",
-        "timestamp": "auto",
+        "meal_unique_id": "DupaBiskupa666",
+        "source_origin": "RAG_BATCH_PROCESS",
+        "timestamp": "2026-01-29 16:15:48",
         "items": [
             {
                 "id": "RAG_RYZ_BIALY",
                 "name": "Ryż biały",
                 "english_name": "White rice",
-                "category": "Zboża/Węglowodany",
+                "category": "Grains",
                 "metrics": {
-                    "gi_value": 73,
+                    "gi_value": 70,
                     "gi_category": "HIGH",
-                    "carbs_per_100g": 28.0,
+                    "carbs_per_100g": 34.89,
                     "gl_per_serving": 0
                 },
                 "quality_score": {
                     "nova_group": 1,
-                    "explanation": "Gotowany na sypko, biały. Produkt jednoskładnikowy, poddany minimalnej obróbce termicznej (gotowanie)."
+                    "explanation": "White rice is a staple food, typically only milled to remove the husk and bran, and then cooked. This process is considered minimal processing."
                 },
                 "metabolic_intelligence": {
-                    "fix_tip": "Łącz z białkiem i tłuszczem, aby obniżyć ładunek glikemiczny. Schłodzenie ryżu po ugotowaniu zwiększa zawartość skrobi opornej."
+                    "fix_tip": "Zjedz najpierw warzywa"
                 },
-                "_vision_context_debug": ""
+                "_vision_context_debug": "",
+                "source_origin": "Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021, NOVA (Classification Sheet)"
             },
             {
                 "id": "RAG_KURCZAK_W_PANIERCE",
-                "name": "Kurczak w panierce (Pierś z kurczaka) (Płatki kukurydziane / Panko) (Smażone na głębokim tłuszczu)",
-                "english_name": "Breaded chicken (Chicken breast) (Corn flakes / Panko) (Deep-fried)",
-                "category": "Mięso/Przetworzone",
+                "name": "Kurczak w panierce Pierś z kurczaka Płatki kukurydziane Panko Smażone na głębokim tłuszczu",
+                "english_name": "Chicken breast, breaded, deep-fried",
+                "category": "Processed Meat",
                 "metrics": {
-                    "gi_value": 60,
+                    "gi_value": 70,
                     "gi_category": "HIGH",
-                    "carbs_per_100g": 12.0,
+                    "carbs_per_100g": 20.0,
                     "gl_per_serving": 0
                 },
                 "quality_score": {
                     "nova_group": 4,
-                    "explanation": "Produkt smażony na głębokim tłuszczu, z panierką z płatków kukurydzianych i panko. Zawiera składniki przetworzone (panierka) i jest poddany intensywnej obróbce (smażenie)."
+                    "explanation": "Product is breaded and deep-fried, which involves industrial processing and ingredients typically found in ultra-processed foods (e.g., refined flours in breading, deep-frying process). It falls under examples like 'pre-prepared poultry and fish nuggets and sticks' in NOVA classification."
                 },
                 "metabolic_intelligence": {
-                    "fix_tip": "Unikaj smażenia w głębokim tłuszczu. Wybieraj pieczone lub grillowane mięso bez panierki. Panierka i smażenie zwiększają ładunek glikemiczny i kaloryczność."
+                    "fix_tip": "Zjedz najpierw warzywa"
                 },
-                "_vision_context_debug": ""
+                "_vision_context_debug": "",
+                "source_origin": "Estimation based on Vision & General Knowledge, Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021, NOVA (Classification Sheet)"
             }
         ]
     }

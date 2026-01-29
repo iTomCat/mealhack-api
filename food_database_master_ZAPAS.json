@@ -1,0 +1,2263 @@
+[
+    {
+        "id": "2092",
+        "name": "Ciasto Angel Food (biszkopt białkowy)",
+        "english_name": "Angel food cake (Loblaw's, Toronto, Canada)",
+        "category": "Bakery Products",
+        "metrics": {
+            "gi_value": 67,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 58.1,
+            "gl_per_serving": 20
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Przemysłowy wyrób cukierniczy (marka Loblaw's), prawdopodobnie zawiera emulgatory i konserwanty."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Zjedz to ciasto wyłącznie po pełnowartościowym posiłku bogatym w błonnik i białko, nigdy na pusty żołądek."
+        }
+    },
+    {
+        "id": "2097",
+        "name": "Ciasto ucierane (Pound cake)",
+        "english_name": "Pound cake (Sara Lee Canada, Bramalea, Canada)",
+        "category": "Bakery Products",
+        "metrics": {
+            "gi_value": 55,
+            "gi_category": "LOW",
+            "carbs_per_100g": 52.0,
+            "gl_per_serving": 17
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Ultra-przetworzony produkt pakowany (marka Sara Lee) z długą listą składników."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Mimo niskiego IG, wysoka zawartość tłuszczu i cukru wymaga małej porcji; zjedz wcześniej warzywa."
+        }
+    },
+    {
+        "id": "2099",
+        "name": "Rogalik Croissant",
+        "english_name": "Croissant (Food City, Toronto, Canada)",
+        "category": "Bakery Products",
+        "metrics": {
+            "gi_value": 68,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 48.5,
+            "gl_per_serving": 20
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Produkt piekarniczy z supermarketu, typowo zawiera tłuszcze utwardzone i dodatki."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Wysoka zawartość tłuszczu opóźnia opróżnianie żołądka; połącz z chudym białkiem (np. twaróg), aby ustabilizować glikemię."
+        }
+    },
+    {
+        "id": "2102",
+        "name": "Muffin jagodowy",
+        "english_name": "Blueberry muffin (Culinar Inc., Canada)",
+        "category": "Bakery Products",
+        "metrics": {
+            "gi_value": 60,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 51.5,
+            "gl_per_serving": 18
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Przemysłowy wypiek cukierniczy zawierający cukier, tłuszcze rafinowane i spulchniacze."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Traktuj jako deser po posiłku, a nie śniadanie; zjedz wcześniej jajka lub jogurt naturalny."
+        }
+    },
+    {
+        "id": "2127",
+        "name": "Pączek (typ ciastkowy)",
+        "english_name": "Doughnut, cake type (Loblaw's, Canada)",
+        "category": "Bakery Products",
+        "metrics": {
+            "gi_value": 77,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 48.8,
+            "gl_per_serving": 23
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Smażony wyrób cukierniczy, ultra-przetworzony, połączenie cukru i tłuszczu."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo wysoki ładunek glikemiczny; po spożyciu udaj się na 15-minutowy spacer, aby spalić nadmiar glukozy."
+        }
+    },
+    {
+        "id": "2132",
+        "name": "Gofry (Aunt Jemima)",
+        "english_name": "Waffles, Aunt Jemima (Quaker Oats Co. of Canada)",
+        "category": "Bakery Products",
+        "metrics": {
+            "gi_value": 77,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 37.3,
+            "gl_per_serving": 23
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Gotowy produkt mrożony lub w proszku, ultra-przetworzony."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Unikaj syropów słodzonych; dodaj masło orzechowe lub orzechy, aby tłuszcz spowolnił wchłanianie cukru."
+        }
+    },
+    {
+        "id": "2155",
+        "name": "Bajgiel pszenny (mrożony)",
+        "english_name": "Bagel, white, frozen (Lender's Bakery, Montreal, Canada)",
+        "category": "Breads",
+        "metrics": {
+            "gi_value": 73,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 49.7,
+            "gl_per_serving": 11
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Mrożone pieczywo przemysłowe, zazwyczaj zawiera polepszacze i konserwanty."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Gęste pieczywo o wysokim IG; zjedz tylko połowę i obłóż dużą ilością warzyw i białka."
+        }
+    },
+    {
+        "id": "2157",
+        "name": "Bagietka pszenna (przemysłowa)",
+        "english_name": "Baguette, white, plain, industrially produced",
+        "category": "Breads",
+        "metrics": {
+            "gi_value": 95,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 51.0,
+            "gl_per_serving": 14
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Przemysłowo produkowane pieczywo z białej mąki, szybki proces wypieku."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Ekstremalnie wysoki IG; spożywaj wyłącznie na koniec posiłku, po zjedzeniu błonnika i tłuszczu (np. oliwy)."
+        }
+    },
+    {
+        "id": "2172",
+        "name": "Chleb jęczmienny pełnoziarnisty",
+        "english_name": "Barley bread, whole-wheat",
+        "category": "Breads",
+        "metrics": {
+            "gi_value": 75,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 39.4,
+            "gl_per_serving": 11
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Przetworzony produkt piekarniczy, ale zawiera pełne ziarno (lepszy profil niż białe pieczywo)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Mimo pełnego ziarna IG jest wysoki; posmaruj grubo masłem lub awokado, aby obniżyć odpowiedź glikemiczną."
+        }
+    },
+    {
+        "id": "2194",
+        "name": "Chlebek Chapatti (pełnoziarnisty)",
+        "english_name": "Chapatti, unleavened flatbread, made from whole-wheat flour",
+        "category": "Breads",
+        "metrics": {
+            "gi_value": 54,
+            "gi_category": "LOW",
+            "carbs_per_100g": 37.3,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Tradycyjny chleb płaski, zazwyczaj krótka lista składników (mąka, woda, sól)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Dobry wybór węglowodanowy; niski IG wynika z braku spulchniaczy i gęstej struktury."
+        }
+    },
+    {
+        "id": "2204",
+        "name": "Chleb bezglutenowy (ryżowy)",
+        "english_name": "Gluten-free bread, made from 100% anthocyanin-rich Riceberry rice flour",
+        "category": "Breads",
+        "metrics": {
+            "gi_value": 69,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 39.0,
+            "gl_per_serving": 10
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Pieczywo bezglutenowe często wymaga wielu dodatków teksturotwórczych i skrobi modyfikowanych."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Produkty bezglutenowe często mają mniej błonnika; koniecznie dodaj do posiłku porcję zielonych warzyw."
+        }
+    },
+    {
+        "id": "2304",
+        "name": "Chleb pszenny biały",
+        "english_name": "White bread (Canada 2011)",
+        "category": "Breads",
+        "metrics": {
+            "gi_value": 71,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 46.7,
+            "gl_per_serving": 11
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Typowy chleb tostowy/przemysłowy, ultra-przetworzony, niska wartość odżywcza."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Unikaj jedzenia samego chleba; zawsze łącz z białkiem i tłuszczem, aby spowolnić trawienie skrobi."
+        }
+    },
+    {
+        "id": "2403",
+        "name": "Chleb pszenny pełnoziarnisty",
+        "english_name": "Whole wheat bread (Canada 2007)",
+        "category": "Breads",
+        "metrics": {
+            "gi_value": 96,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 36.2,
+            "gl_per_serving": 14
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Przemysłowy chleb pełnoziarnisty często ma bardzo drobną strukturę mąki, co podnosi IG."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo wysoki IG mimo pełnego ziarna; wybieraj chleby z widocznymi ziarnami lub na zakwasie."
+        }
+    },
+    {
+        "id": "2428",
+        "name": "Chleb na zakwasie (Sourdough)",
+        "english_name": "Sourdough bread (Canada 2007)",
+        "category": "Breads",
+        "metrics": {
+            "gi_value": 55,
+            "gi_category": "LOW",
+            "carbs_per_100g": 45.9,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Fermentacja mlekowa jest tradycyjną metodą przetwarzania, zaliczana do grupy 3 (chyba że dodano polepszacze)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Kwasy organiczne z zakwasu naturalnie obniżają odpowiedź glikemiczną – najlepszy wybór wśród pieczywa."
+        }
+    },
+    {
+        "id": "2444",
+        "name": "Płatki All-Bran (wysokobłonnikowe)",
+        "english_name": "All-Bran™ (Kellogg's, Battle Creek, MI, USA)",
+        "category": "Breakfast Cereals",
+        "metrics": {
+            "gi_value": 38,
+            "gi_category": "LOW",
+            "carbs_per_100g": 70.8,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Ultra-przetworzony produkt zbożowy z dodatkiem słodu, cukru i syropu kukurydzianego."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Mimo niskiego IG, to produkt przetworzony; połącz z jogurtem greckim, aby zwiększyć sytość białkiem."
+        }
+    },
+    {
+        "id": "2462",
+        "name": "Płatki kukurydziane (Cornflakes)",
+        "english_name": "Cornflakes™ (Kellogg's, Australia)",
+        "category": "Breakfast Cereals",
+        "metrics": {
+            "gi_value": 77,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 84.7,
+            "gl_per_serving": 15
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Produkt ultra-przetworzony (ekstruzja), wysoki indeks glikemiczny, niska gęstość odżywcza."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo szybki wyrzut glukozy; nigdy nie jedz jako samodzielny posiłek, dodaj garść orzechów."
+        }
+    },
+    {
+        "id": "2495",
+        "name": "Owsianka (z płatków)",
+        "english_name": "Porridge (Value, UK)",
+        "category": "Breakfast Cereals",
+        "metrics": {
+            "gi_value": 63,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 60.4,
+            "gl_per_serving": 13
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzone płatki owsiane, poddane jedynie obróbce termicznej."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Beta-glukany w owsie spowalniają trawienie; dodaj masło orzechowe, aby jeszcze bardziej obniżyć krzywą cukrową."
+        }
+    },
+    {
+        "id": "2509",
+        "name": "Ryż preparowany (Rice Bubbles)",
+        "english_name": "Rice Bubbles™ (Kellogg's, Australia)",
+        "category": "Breakfast Cereals",
+        "metrics": {
+            "gi_value": 95,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 87.7,
+            "gl_per_serving": 19
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Ultra-przetworzone ziarno ryżu (ekspandowane), pozbawione błonnika, działa jak czysta glukoza."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Ekstremalnie wysoki IG; traktuj jako 'paliwo rakietowe' tylko przed bardzo intensywnym treningiem."
+        }
+    },
+    {
+        "id": "2546",
+        "name": "Kasza jęczmienna perłowa",
+        "english_name": "Barley, pearled",
+        "category": "Cereal Grains",
+        "metrics": {
+            "gi_value": 23,
+            "gi_category": "LOW",
+            "carbs_per_100g": 23.0,
+            "gl_per_serving": 10
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzone ziarno (usunięta łuska), naturalne źródło węglowodanów."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Jęczmień ma wyjątkowo niski IG dzięki lepkiej strukturze błonnika; świetny zamiennik ryżu w sałatkach."
+        }
+    },
+    {
+        "id": "2601",
+        "name": "Kuskus (gotowany 5 min)",
+        "english_name": "Couscous, boiled 5 min",
+        "category": "Cereal Grains",
+        "metrics": {
+            "gi_value": 62,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 23.0,
+            "gl_per_serving": 28
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Przetworzony produkt z pszenicy durum, szybki w przygotowaniu i trawieniu."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Drobna struktura kuskusu sprzyja szybkiemu trawieniu; wymieszaj z dużą ilością warzyw, aby zwiększyć objętość."
+        }
+    },
+    {
+        "id": "2606",
+        "name": "Kasza jaglana (Foxtail millet)",
+        "english_name": "Foxtail millet (Setaria italica), pre-soaked and steamed",
+        "category": "Cereal Grains",
+        "metrics": {
+            "gi_value": 89,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 24.0,
+            "gl_per_serving": 40
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Naturalne ziarno, minimalnie przetworzone (moczenie i parowanie)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Kasza jaglana ma wysoki IG; nie rozgotowuj jej i zawsze jedz po porcji białka (np. mięso, strączki)."
+        }
+    },
+    {
+        "id": "2685",
+        "name": "Ryż długoziarnisty (gotowany 25 min)",
+        "english_name": "Long grain, boiled 25 min",
+        "category": "Cereal Grains",
+        "metrics": {
+            "gi_value": 56,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 28.0,
+            "gl_per_serving": 25
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Biały ryż polerowany, usunięto błonnik, minimalnie przetworzony."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Schłodź ryż po ugotowaniu na 24h, aby wytworzyć skrobię oporną i obniżyć ładunek glikemiczny."
+        }
+    },
+    {
+        "id": "2727",
+        "name": "Ryż jaśminowy (z ryżowaru)",
+        "english_name": "Jasmine rice, Della, cooked in rice cooker",
+        "category": "Cereal Grains",
+        "metrics": {
+            "gi_value": 96,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 30.0,
+            "gl_per_serving": 43
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Odmiana ryżu o naturalnie niskiej zawartości amylozy, co powoduje szybkie trawienie."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Ryż jaśminowy podnosi cukier niemal jak glukoza; unikaj przy insulinooporności lub jedz małe porcje z tłuszczem."
+        }
+    },
+    {
+        "id": "2887",
+        "name": "Jabłko (surowe)",
+        "english_name": "Apple, NS (Denmark 1991)",
+        "category": "Fruit and fruit products",
+        "metrics": {
+            "gi_value": 28,
+            "gi_category": "LOW",
+            "carbs_per_100g": 11.0,
+            "gl_per_serving": 4
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzony owoc, naturalne źródło błonnika i pektyn."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Zjedz ze skórką, aby dostarczyć pektyny, które spowalniają wchłanianie cukru."
+        }
+    },
+    {
+        "id": "2902",
+        "name": "Banan (odmiana Chapa kola)",
+        "english_name": "Banana Chapa kola variety (Musa sp.)",
+        "category": "Fruit and fruit products",
+        "metrics": {
+            "gi_value": 30,
+            "gi_category": "LOW",
+            "carbs_per_100g": 21.5,
+            "gl_per_serving": 5
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Naturalny owoc, nieprzetworzony."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Wybieraj mniej dojrzałe (zielonkawe) banany, aby dostarczyć więcej skrobi opornej zamiast cukrów prostych."
+        }
+    },
+    {
+        "id": "2913",
+        "name": "Banan (przejrzały)",
+        "english_name": "Banana, over-ripe (yellow flecked with brown)",
+        "category": "Fruit and fruit products",
+        "metrics": {
+            "gi_value": 48,
+            "gi_category": "LOW",
+            "carbs_per_100g": 19.2,
+            "gl_per_serving": 7
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Naturalny owoc, ale w stanie wysokiej dojrzałości (zmieniony skład cukrów)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Przejrzałe banany mają łatwiej przyswajalne cukry; zjedz je po posiłku białkowym, a nie jako samodzielną przekąskę."
+        }
+    },
+    {
+        "id": "2933",
+        "name": "Daktyle (odmiana Bo ma'an)",
+        "english_name": "Dates, Bo ma'an, Tamer stage",
+        "category": "Fruit and fruit products",
+        "metrics": {
+            "gi_value": 52,
+            "gi_category": "LOW",
+            "carbs_per_100g": 68.8,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Suszone owoce bez dodanego cukru (naturalna koncentracja)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo wysoka gęstość węglowodanów; zjedz maksymalnie 2-3 sztuki w połączeniu z orzechami włoskimi."
+        }
+    },
+    {
+        "id": "2974",
+        "name": "Mango (surowe)",
+        "english_name": "Mango (Mangifera indica)",
+        "category": "Fruit and fruit products",
+        "metrics": {
+            "gi_value": 51,
+            "gi_category": "LOW",
+            "carbs_per_100g": 15.1,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzony owoc tropikalny."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Owoce tropikalne są słodsze; traktuj mango jako deser po obiedzie, aby błonnik z posiłku zamortyzował cukier."
+        }
+    },
+    {
+        "id": "2999",
+        "name": "Brzoskwinie w syropie (konserwowe)",
+        "english_name": "Peach, canned in heavy syrup",
+        "category": "Fruit and fruit products",
+        "metrics": {
+            "gi_value": 58,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 14.7,
+            "gl_per_serving": 9
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Owoce przetworzone, w zalewie cukrowej (syrop)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Unikaj syropu, to czysty cukier; lepiej wybierz brzoskwinie świeże lub mrożone."
+        }
+    },
+    {
+        "id": "3000",
+        "name": "Brzoskwinie suszone",
+        "english_name": "Peach, dried",
+        "category": "Fruit and fruit products",
+        "metrics": {
+            "gi_value": 35,
+            "gi_category": "LOW",
+            "carbs_per_100g": 36.9,
+            "gl_per_serving": 5
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Suszone owoce (metoda tradycyjna), o ile bez dodatku siarczanów/cukru."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Skoncentrowane źródło energii; dodaj do jogurtu naturalnego, aby białko spowolniło trawienie."
+        }
+    },
+    {
+        "id": "3025",
+        "name": "Rodzynki (Sun-Maid)",
+        "english_name": "Raisins (Sun-Maid, Kingsburg, CA, USA)",
+        "category": "Fruit and fruit products",
+        "metrics": {
+            "gi_value": 50,
+            "gi_category": "LOW",
+            "carbs_per_100g": 72.5,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Suszone winogrona, brak dodanego cukru, ale wysoka naturalna zawartość."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Łatwo zjeść ich za dużo; używaj jako posypki (łyżeczka), a nie głównej przekąski."
+        }
+    },
+    {
+        "id": "3039",
+        "name": "Arbuz (surowy)",
+        "english_name": "Watermelon, raw",
+        "category": "Fruit and fruit products",
+        "metrics": {
+            "gi_value": 80,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 5.0,
+            "gl_per_serving": 12
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzony owoc, wysoka zawartość wody."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Wysokie IG, ale niski ładunek w małej porcji; jedz w całości, unikaj blendowania na sok."
+        }
+    },
+    {
+        "id": "3040",
+        "name": "Koktajl owocowy w puszce",
+        "english_name": "Fruit Cocktail, canned (Delmonte)",
+        "category": "Fruit and fruit products",
+        "metrics": {
+            "gi_value": 56,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 13.1,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Mieszanka owoców w zalewie (syropie), produkt przetworzony."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Wybieraj wersje w soku własnym, a nie w syropie, i zawsze łącz z orzechami lub nasionami."
+        }
+    },
+    {
+        "id": "1804",
+        "name": "Marchew gotowana (nieobrana)",
+        "english_name": "Carrots, unpeeled, boiled",
+        "category": "Vegetables",
+        "metrics": {
+            "gi_value": 32,
+            "gi_category": "LOW",
+            "carbs_per_100g": 6.1,
+            "gl_per_serving": 3
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzone warzywo (gotowanie)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Gotowanie w mundurkach zachowuje więcej składników odżywczych; jedz z odrobiną tłuszczu dla wchłaniania witaminy A."
+        }
+    },
+    {
+        "id": "1806",
+        "name": "Pasternak gotowany",
+        "english_name": "Parsnips, peeled, boiled",
+        "category": "Root vegetables",
+        "metrics": {
+            "gi_value": 52,
+            "gi_category": "LOW",
+            "carbs_per_100g": 10.0,
+            "gl_per_serving": 5
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzone warzywo korzeniowe."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Pasternak ma naturalnie słodki smak; gotowanie utrzymuje IG w ryzach, pieczenie znacznie go podnosi."
+        }
+    },
+    {
+        "id": "1885",
+        "name": "Batat gotowany (Słodki ziemniak)",
+        "english_name": "Sweet potato (Ipomoea batatas), Dor cultivar, peeled, cut into 25 mm slices, boiled",
+        "category": "Root vegetables",
+        "metrics": {
+            "gi_value": 47,
+            "gi_category": "LOW",
+            "carbs_per_100g": 21.3,
+            "gl_per_serving": 9
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzone warzywo korzeniowe."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Gotowane bataty mają niski IG; unikaj pieczenia, które karmelizuje skrobię i podnosi IG nawet do 90."
+        }
+    },
+    {
+        "id": "1936",
+        "name": "Jam (pochrzyn) gotowany",
+        "english_name": "White yam (Dioscorea alata), peeled, boiled 30 min",
+        "category": "Root vegetables",
+        "metrics": {
+            "gi_value": 62,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 16.7,
+            "gl_per_serving": 12
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzone warzywo skrobiowe."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bogate źródło energii; łącz z dużą ilością zielonych warzyw liściastych, aby zwiększyć objętość posiłku."
+        }
+    },
+    {
+        "id": "3574",
+        "name": "Dynia gotowana na parze",
+        "english_name": "Pumpkin, steamed for 15 min",
+        "category": "Vegetables",
+        "metrics": {
+            "gi_value": 52,
+            "gi_category": "LOW",
+            "carbs_per_100g": 18.0,
+            "gl_per_serving": 5
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzone warzywo."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Dynia ma niski ładunek glikemiczny mimo słodkiego smaku; idealna jako baza do zup krem (dodaj pestki dyni)."
+        }
+    },
+    {
+        "id": "3577",
+        "name": "Kukurydza słodka (konserwowa)",
+        "english_name": "Sweet corn, whole kernel, canned, diet-pack, drained",
+        "category": "Vegetables",
+        "metrics": {
+            "gi_value": 47,
+            "gi_category": "LOW",
+            "carbs_per_100g": 17.9,
+            "gl_per_serving": 9
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Warzywo w puszce, produkt przetworzony (konserwacja)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "To skrobia, tak jak ryż (nie warzywo!), a nie warzywo. Aby uniknąć skoku cukru, nigdy nie jedz jej samej dodaj białko lub oliwę."
+        }
+    },
+    {
+        "id": "3608",
+        "name": "Ziemniak pieczony (Russet)",
+        "english_name": "Russet potatoes, baked without fat",
+        "category": "Potatoes",
+        "metrics": {
+            "gi_value": 111,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 15.8,
+            "gl_per_serving": 22
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzone (pieczenie), ale wysoki IG wynika z odmiany i metody."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Ekstremalnie wysoki IG; zjedz ze skórką i koniecznie dodaj tłuszcz (oliwa, masło) lub białko (twaróg)."
+        }
+    },
+    {
+        "id": "3624",
+        "name": "Ziemniak gotowany (biały)",
+        "english_name": "Potatoes, white, NS, cooked",
+        "category": "Potatoes",
+        "metrics": {
+            "gi_value": 41,
+            "gi_category": "LOW",
+            "carbs_per_100g": 20.0,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzone (gotowanie)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Najlepsza forma ziemniaka; schłodzenie ich po ugotowaniu (np. do sałatki) wytwarza korzystną skrobię oporną."
+        }
+    },
+    {
+        "id": "3636",
+        "name": "Frytki (smażone na głębokim tłuszczu)",
+        "english_name": "French Fries, deep-fried in oil for 10 min",
+        "category": "Potatoes",
+        "metrics": {
+            "gi_value": 42,
+            "gi_category": "LOW",
+            "carbs_per_100g": 21.0,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Produkt przetworzony (smażenie), często z dodatkiem soli."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Niski IG wynika z tłuszczu opóźniającego trawienie, ale to produkt prozapalny; unikaj lub piecz w domu."
+        }
+    },
+    {
+        "id": "1856",
+        "name": "Puree ziemniaczane instant",
+        "english_name": "Instant mashed potato (Idahoan Foods)",
+        "category": "Potatoes",
+        "metrics": {
+            "gi_value": 88,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 15.0,
+            "gl_per_serving": 18
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Ultra-przetworzony produkt w proszku, pozbawiony struktury komórkowej."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Błyskawicznie trawiona skrobia działa jak cukier; zamień na prawdziwe gotowane ziemniaki gniecione widelcem."
+        }
+    },
+    {
+        "id": "577",
+        "name": "Ryż Basmati (biały, gotowany)",
+        "english_name": "Basmati, white, boiled (Mahatma brand)",
+        "category": "Rice",
+        "metrics": {
+            "gi_value": 58,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 32.0,
+            "gl_per_serving": 26
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzone ziarno (obłuszczone i polerowane)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Basmati ma naturalnie niższy IG niż inne białe ryże; schłodź go po ugotowaniu, aby zwiększyć ilość skrobi opornej."
+        }
+    },
+    {
+        "id": "602",
+        "name": "Ryż Jaśminowy (biały)",
+        "english_name": "Jasmine Fragrant rice, white (SunRice brand)",
+        "category": "Rice",
+        "metrics": {
+            "gi_value": 79,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 32.0,
+            "gl_per_serving": 36
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzone ziarno, ale o specyficznej strukturze skrobi (mało amylozy)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo szybko podnosi cukier; jedz tylko małe porcje i zawsze po zjedzeniu porcji warzyw i białka."
+        }
+    },
+    {
+        "id": "2622",
+        "name": "Ryż brązowy (gotowany na parze)",
+        "english_name": "Brown, steamed",
+        "category": "Rice",
+        "metrics": {
+            "gi_value": 50,
+            "gi_category": "LOW",
+            "carbs_per_100g": 26.0,
+            "gl_per_serving": 23
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Pełne ziarno z zachowaną łuską, minimalnie przetworzone."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Błonnik w otoczce spowalnia trawienie; to najlepszy wybór wśród ryży dla stabilnej glikemii."
+        }
+    },
+    {
+        "id": "683",
+        "name": "Ryż kleisty (Sticky rice)",
+        "english_name": "Sticky rice (China 2005)",
+        "category": "Rice",
+        "metrics": {
+            "gi_value": 88,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 30.0,
+            "gl_per_serving": 40
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Odmiana ryżu o bardzo wysokiej zawartości amylopektyny (szybkie trawienie)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Działa na cukier prawie jak glukoza; unikaj przy insulinooporności lub łącz z dużą ilością tłuszczu (np. awokado)."
+        }
+    },
+    {
+        "id": "1466",
+        "name": "Spaghetti (białe, gotowane 15 min)",
+        "english_name": "Spaghetti, white, boiled 15 min in salted water",
+        "category": "Pasta",
+        "metrics": {
+            "gi_value": 44,
+            "gi_category": "LOW",
+            "carbs_per_100g": 30.0,
+            "gl_per_serving": 18
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Makaron z pszenicy durum, minimalnie przetworzony (suszenie)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Gotuj al dente (krócej); rozgotowany makaron ma znacznie wyższy indeks glikemiczny."
+        }
+    },
+    {
+        "id": "1479",
+        "name": "Spaghetti pełnoziarniste",
+        "english_name": "Spaghetti integrali (wholemeal durum wheat flour)",
+        "category": "Pasta",
+        "metrics": {
+            "gi_value": 35,
+            "gi_category": "LOW",
+            "carbs_per_100g": 28.0,
+            "gl_per_serving": 14
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Makaron z pełnego ziarna, zachowany błonnik."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo niski IG dzięki zbitej strukturze makaronu i błonnikowi; świetna baza węglowodanowa posiłku."
+        }
+    },
+    {
+        "id": "1442",
+        "name": "Makaron bezglutenowy (kukurydziany)",
+        "english_name": "Corn pasta, gluten-free (Orgran Natural Foods)",
+        "category": "Pasta",
+        "metrics": {
+            "gi_value": 78,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 30.0,
+            "gl_per_serving": 31
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Produkt przetworzony, mąka kukurydziana ma wyższy IG niż pszenica durum."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Wysoki IG; jeśli musisz jeść bezglutenowo, wybierz makaron z roślin strączkowych lub gryczany."
+        }
+    },
+    {
+        "id": "3259",
+        "name": "Makaron Instant (zupka chińska)",
+        "english_name": "Instant 'two-minute' noodles, Maggi®",
+        "category": "Noodles",
+        "metrics": {
+            "gi_value": 46,
+            "gi_category": "LOW",
+            "carbs_per_100g": 20.0,
+            "gl_per_serving": 18
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Ultra-przetworzony produkt (smażenie wstępne, dodatki smakowe, spulchniacze)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Niski IG wynika z dużej zawartości tłuszczu przemysłowego; unikaj ze względu na stan zapalny, nie cukier."
+        }
+    },
+    {
+        "id": "1463",
+        "name": "Makaron ryżowy (suszony, gotowany)",
+        "english_name": "Rice noodles, dried, boiled",
+        "category": "Noodles",
+        "metrics": {
+            "gi_value": 61,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 28.0,
+            "gl_per_serving": 24
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Produkt z mąki ryżowej i wody, minimalnie przetworzony."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Wysoka gęstość węglowodanów; dodaj do zupy (np. Pho) dużo kiełków i mięsa, jedz makaron na końcu."
+        }
+    },
+    {
+        "id": "1483",
+        "name": "Makaron gryczany (Soba)",
+        "english_name": "Buckwheat noodles",
+        "category": "Noodles",
+        "metrics": {
+            "gi_value": 59,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 22.0,
+            "gl_per_serving": 24
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Makaron z mąki gryczanej (często z domieszką pszennej), tradycyjny wyrób."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Gryka zawiera D-chiro-inozytol, który wspiera wrażliwość na insulinę; dobry wybór."
+        }
+    },
+    {
+        "id": "1493",
+        "name": "Makaron sojowy (z fasoli Mung)",
+        "english_name": "Mung bean noodles (Longkou beanthread), dried, boiled",
+        "category": "Noodles",
+        "metrics": {
+            "gi_value": 39,
+            "gi_category": "LOW",
+            "carbs_per_100g": 25.0,
+            "gl_per_serving": 16
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Makaron ze skrobi fasoli mung, minimalnie przetworzony."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo niski IG dzięki skrobi opornej; idealny do sałatek azjatyckich i sajgonek."
+        }
+    },
+    {
+        "id": "2840",
+        "name": "Mleko krowie (pełnotłuste)",
+        "english_name": "Milk, NS, tested in young adults (South Africa)",
+        "category": "Dairy products and alternatives",
+        "metrics": {
+            "gi_value": 3,
+            "gi_category": "LOW",
+            "carbs_per_100g": 5.0,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Produkt nieprzetworzony lub minimalnie przetworzony (pasteryzacja)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Białko i tłuszcz mleczny naturalnie obniżają wyrzut cukru; pij do posiłku, a nie między nimi."
+        }
+    },
+    {
+        "id": "2880",
+        "name": "Jogurt naturalny (beztłuszczowy)",
+        "english_name": "Fat-Free Natural yoghurt (Jalna Dairy Foods, Australia)",
+        "category": "Dairy products and alternatives",
+        "metrics": {
+            "gi_value": 19,
+            "gi_category": "LOW",
+            "carbs_per_100g": 7.4,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Fermentowany produkt mleczny bez dodatków cukru."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Fermentacja redukuje laktozę; świetna baza białkowa śniadania stabilizująca glikemię."
+        }
+    },
+    {
+        "id": "2871",
+        "name": "Jogurt truskawkowy (słodzony)",
+        "english_name": "Yoghurt, Strawberry (Healthy Living Light, UK)",
+        "category": "Dairy products and alternatives",
+        "metrics": {
+            "gi_value": 45,
+            "gi_category": "LOW",
+            "carbs_per_100g": 7.9,
+            "gl_per_serving": 2
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Produkt ultra-przetworzony z dodatkiem cukru, aromatów i zagęstników."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Unikaj gotowych jogurtów owocowych; kup naturalny i dodaj świeże truskawki."
+        }
+    },
+    {
+        "id": "2828",
+        "name": "Custard (domowy sos waniliowy)",
+        "english_name": "Custard, home made from milk, egg, wheat starch, and sugar",
+        "category": "Dairy products and alternatives",
+        "metrics": {
+            "gi_value": 43,
+            "gi_category": "LOW",
+            "carbs_per_100g": 16.5,
+            "gl_per_serving": 4
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Produkt przetworzony kulinarnie w domu (cukier dodany do mleka i jaj)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Obecność tłuszczu i białka z jaj obniża IG cukru, ale to wciąż deser – jedz po warzywach."
+        }
+    },
+    {
+        "id": "114",
+        "name": "Mleko ryżowe (niskotłuszczowe)",
+        "english_name": "Rice milk drink, low-fat, Australia's Own Natural™",
+        "category": "Dairy products and alternatives",
+        "metrics": {
+            "gi_value": 92,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 12.8,
+            "gl_per_serving": 23
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Napój roślinny produkowany przez enzymatyczną hydrolizę skrobi (działa jak cukier)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "To w zasadzie płynna glukoza; zamień na mleko sojowe lub migdałowe (niesłodzone)."
+        }
+    },
+    {
+        "id": "2833",
+        "name": "Lody (waniliowo-czekoladowe)",
+        "english_name": "Ice cream (half vanilla, half chocolate)",
+        "category": "Dairy products and alternatives",
+        "metrics": {
+            "gi_value": 58,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 19.0,
+            "gl_per_serving": 12
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Ultra-przetworzony deser mrożony z emulgatorami i dużą ilością cukru."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Tłuszcz w lodach opóźnia wchłanianie cukru, ale to bomba kaloryczna; jedz rzadko, po posiłku."
+        }
+    },
+    {
+        "id": "130",
+        "name": "Napój sojowy (bananowy)",
+        "english_name": "Smoothie drink, soy, banana, 1% fat (So Natural Foods)",
+        "category": "Dairy products and alternatives",
+        "metrics": {
+            "gi_value": 30,
+            "gi_category": "LOW",
+            "carbs_per_100g": 7.3,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Napój sojowy z dodatkami smakowymi i cukrem."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Białko sojowe łagodzi odpowiedź glikemiczną, ale lepiej wybrać wersję naturalną bez cukru."
+        }
+    },
+    {
+        "id": "3366",
+        "name": "Chipsy kukurydziane (Doritos)",
+        "english_name": "Corn chips, plain, salted (Doritos™ original)",
+        "category": "Snack foods",
+        "metrics": {
+            "gi_value": 72,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 55.6,
+            "gl_per_serving": 18
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Ultra-przetworzona przekąska słona, smażona, z dodatkami smakowymi."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Wysoki indeks i kaloryczność; zjedz małą garść dopiero po posiłku białkowym, nigdy na pusty żołądek."
+        }
+    },
+    {
+        "id": "1566",
+        "name": "Precle (pieczone)",
+        "english_name": "Pretzels, oven-baked, traditional wheat flavor",
+        "category": "Snack foods",
+        "metrics": {
+            "gi_value": 84,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 80.0,
+            "gl_per_serving": 21
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Produkt z rafinowanej mąki pszennej, pozbawiony błonnika, z dodatkiem soli."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Błyskawicznie podnoszą cukier; połącz z hummusem lub serem, aby spowolnić trawienie skrobi."
+        }
+    },
+    {
+        "id": "1576",
+        "name": "Chipsy ziemniaczane (pieczone)",
+        "english_name": "Baked potato chips (Baked Lays)",
+        "category": "Snack foods",
+        "metrics": {
+            "gi_value": 72,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 75.8,
+            "gl_per_serving": 18
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Mimo pieczenia to nadal ultra-przetworzony produkt skrobiowy o wysokiej gęstości węglowodanów."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Pieczenie nie obniża znacząco IG ziemniaka w tej formie; traktuj jako deser węglowodanowy."
+        }
+    },
+    {
+        "id": "1594",
+        "name": "Czekolada mleczna",
+        "english_name": "Chocolate, milk (Milka, Mondelez, Italy)",
+        "category": "Confectionery",
+        "metrics": {
+            "gi_value": 54,
+            "gi_category": "LOW",
+            "carbs_per_100g": 58.1,
+            "gl_per_serving": 14
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Słodycz przemysłowy, wysoka zawartość cukru i tłuszczu, emulgatory."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Tłuszcz spowalnia wchłanianie cukru (niski IG), ale to bomba kaloryczna; zjedz 2 kostki po obiedzie."
+        }
+    },
+    {
+        "id": "1587",
+        "name": "Czekolada ciemna",
+        "english_name": "Chocolate, dark, Dove® (M&M/Mars, USA)",
+        "category": "Confectionery",
+        "metrics": {
+            "gi_value": 23,
+            "gi_category": "LOW",
+            "carbs_per_100g": 52.6,
+            "gl_per_serving": 6
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Czekolada deserowa, wciąż zawiera dodany cukier i emulgatory (grupa 4 dla marek masowych)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo niski IG; najlepszy wybór na 'coś słodkiego', polifenole z kakao wspierają metabolizm."
+        }
+    },
+    {
+        "id": "1619",
+        "name": "Nutella (krem orzechowy)",
+        "english_name": "Nutella®, chocolate hazelnut spread (Ferrero Australia)",
+        "category": "Confectionery",
+        "metrics": {
+            "gi_value": 25,
+            "gi_category": "LOW",
+            "carbs_per_100g": 54.7,
+            "gl_per_serving": 6
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Ultra-przetworzony krem cukrowo-tłuszczowy (olej palmowy, cukier)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Niski IG jest mylący (efekt tłuszczu); to głównie cukier i olej, jedz symbolicznie."
+        }
+    },
+    {
+        "id": "1541",
+        "name": "Pasek owocowy (Fruit Leather)",
+        "english_name": "Strawberry fruit leather (Stretch Island Fruit Company)",
+        "category": "Snack foods",
+        "metrics": {
+            "gi_value": 29,
+            "gi_category": "LOW",
+            "carbs_per_100g": 78.6,
+            "gl_per_serving": 7
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Przetworzona przekąska owocowa, skoncentrowane cukry, często pozbawiona struktury owocu."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Skoncentrowana fruktoza; nie traktuj jako owocu, lecz jako cukierek – zjedz po orzechach."
+        }
+    },
+    {
+        "id": "1768",
+        "name": "Sacharoza (Cukier stołowy)",
+        "english_name": "Sucrose (Australia 2007)",
+        "category": "Sugars and Syrups",
+        "metrics": {
+            "gi_value": 59,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 100.0,
+            "gl_per_serving": 3
+        },
+        "quality_score": {
+            "nova_group": 2,
+            "explanation": "Przetworzony składnik kulinarny (cukier rafinowany)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Czysta energia bez wartości; używaj oszczędnie i zawsze w towarzystwie błonnika."
+        }
+    },
+    {
+        "id": "3460",
+        "name": "Miód (Australian)",
+        "english_name": "Australian honey (Wescobee Limited, Australia)",
+        "category": "Sugars and Syrups",
+        "metrics": {
+            "gi_value": 59,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 78.1,
+            "gl_per_serving": 3
+        },
+        "quality_score": {
+            "nova_group": 2,
+            "explanation": "Naturalny produkt, ale w klasyfikacji NOVA traktowany jako składnik kulinarny (cukier)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Mimo naturalnego pochodzenia, metabolicznie działa podobnie do cukru; stosuj z umiarem."
+        }
+    },
+    {
+        "id": "3432",
+        "name": "Fruktoza (krystaliczna)",
+        "english_name": "Fructose (Sigma Chemical Company)",
+        "category": "Sugars and Syrups",
+        "metrics": {
+            "gi_value": 24,
+            "gi_category": "LOW",
+            "carbs_per_100g": 100.0,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 2,
+            "explanation": "Wyizolowany składnik kulinarny."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Niski IG, ale obciąża wątrobę i sprzyja insulinooporności; unikaj jako słodzika."
+        }
+    },
+    {
+        "id": "3072",
+        "name": "Fasola Adzuki (gotowana na parze)",
+        "english_name": "Adzuki beans (Vigna angularis), pre-soaked, steamed",
+        "category": "Legumes",
+        "metrics": {
+            "gi_value": 21,
+            "gi_category": "LOW",
+            "carbs_per_100g": 25.0,
+            "gl_per_serving": 3
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Naturalne nasiona roślin strączkowych, poddane jedynie namaczaniu i parowaniu."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo niski IG; idealne źródło skrobi opornej, jedz zamiast ryżu, aby poprawić wrażliwość na insulinę."
+        }
+    },
+    {
+        "id": "3106",
+        "name": "Ciecierzyca (gotowana)",
+        "english_name": "Chickpeas, dried, boiled",
+        "category": "Legumes",
+        "metrics": {
+            "gi_value": 31,
+            "gi_category": "LOW",
+            "carbs_per_100g": 27.0,
+            "gl_per_serving": 5
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Produkt nieprzetworzony (suszone ziarna ugotowane w wodzie)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Białko i błonnik w ciecierzycy tworzą barierę w jelitach; zjedz porcję przed posiłkiem węglowodanowym."
+        }
+    },
+    {
+        "id": "3113",
+        "name": "Hummus (pasta z ciecierzycy)",
+        "english_name": "Hummus (chickpea salad dip)",
+        "category": "Legumes",
+        "metrics": {
+            "gi_value": 6,
+            "gi_category": "LOW",
+            "carbs_per_100g": 21.1,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Produkt przetworzony (ciecierzyca z dodatkiem tłuszczu/tahini i soli)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Ekstremalnie niski IG dzięki połączeniu błonnika i tłuszczu; doskonały dodatek do warzyw surowych."
+        }
+    },
+    {
+        "id": "3125",
+        "name": "Fasola czerwona Kidney (gotowana)",
+        "english_name": "Kidney beans, dried, boiled",
+        "category": "Legumes",
+        "metrics": {
+            "gi_value": 23,
+            "gi_category": "LOW",
+            "carbs_per_100g": 23.0,
+            "gl_per_serving": 3
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Naturalne ziarna ugotowane w wodzie."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Wysoka zawartość błonnika rozpuszczalnego; dodaj do sałatki, aby wydłużyć uczucie sytości."
+        }
+    },
+    {
+        "id": "3137",
+        "name": "Soczewica zielona (gotowana)",
+        "english_name": "Lentils, green, dried, boiled",
+        "category": "Legumes",
+        "metrics": {
+            "gi_value": 22,
+            "gi_category": "LOW",
+            "carbs_per_100g": 20.0,
+            "gl_per_serving": 3
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Produkt minimalnie przetworzony (gotowanie)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Soczewica minimalnie podnosi cukier; świetna baza posiłku zamiast ziemniaków czy makaronu."
+        }
+    },
+    {
+        "id": "3170",
+        "name": "Soja (konserwowa)",
+        "english_name": "Soya beans, canned in brine",
+        "category": "Legumes",
+        "metrics": {
+            "gi_value": 14,
+            "gi_category": "LOW",
+            "carbs_per_100g": 3.6,
+            "gl_per_serving": 2
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Warzywa w zalewie solnej (konserwowane), produkt przetworzony."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo niska zawartość węglowodanów i dużo białka; idealny 'preload' przed głównym daniem."
+        }
+    },
+    {
+        "id": "3236",
+        "name": "Orzechy nerkowca",
+        "english_name": "Cashew nuts",
+        "category": "Nuts",
+        "metrics": {
+            "gi_value": 25,
+            "gi_category": "LOW",
+            "carbs_per_100g": 20.7,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Naturalne orzechy, nieprzetworzone (o ile niesolone/nieprażone w tłuszczu)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Mają więcej węglowodanów niż inne orzechy, ale wciąż niski IG; jedz garść jako przekąskę."
+        }
+    },
+    {
+        "id": "3244",
+        "name": "Orzeszki ziemne (Fistaszki)",
+        "english_name": "Peanuts, crushed",
+        "category": "Nuts",
+        "metrics": {
+            "gi_value": 7,
+            "gi_category": "LOW",
+            "carbs_per_100g": 8.3,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Naturalne orzechy (technicznie strączki), minimalnie przetworzone."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "IG bliski zeru; zjedz garść przed owocami, aby tłuszcz z orzechów spowolnił wchłanianie fruktozy."
+        }
+    },
+    {
+        "id": "2133",
+        "name": "Piwo (Lager)",
+        "english_name": "Beer, Toohey's New (Australia)",
+        "category": "Beverages",
+        "metrics": {
+            "gi_value": 66,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 3.1,
+            "gl_per_serving": 7
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Napój fermentowany alkoholowy. Przetworzony, ale zazwyczaj krótka lista składników."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Alkohol hamuje spalanie tłuszczu; pij wyłącznie do posiłku białkowego, aby spowolnić wchłanianie węglowodanów."
+        }
+    },
+    {
+        "id": "3044",
+        "name": "Sok jabłkowy (niesłodzony)",
+        "english_name": "Apple juice, unsweetened (Allens, Toronto, Canada)",
+        "category": "Fruit juices",
+        "metrics": {
+            "gi_value": 42,
+            "gi_category": "LOW",
+            "carbs_per_100g": 11.4,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Sok 100% z owoców (brak dodanego cukru, ale brak też błonnika)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Płynna fruktoza bez błonnika szybko obciąża wątrobę; pij tylko po zjedzeniu błonnika (np. warzyw)."
+        }
+    },
+    {
+        "id": "1196",
+        "name": "Sok pomarańczowy",
+        "english_name": "Orange juice (New Zealand 2019)",
+        "category": "Fruit juices",
+        "metrics": {
+            "gi_value": 41,
+            "gi_category": "LOW",
+            "carbs_per_100g": 8.9,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Sok owocowy, pasteryzowany."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Mimo niskiego IG, płynna forma sprzyja przejadaniu się; zawsze wybieraj całą pomarańczę zamiast soku."
+        }
+    },
+    {
+        "id": "1202",
+        "name": "Sok pomidorowy (bez cukru)",
+        "english_name": "Tomato juice, canned, no added sugar",
+        "category": "Fruit juices",
+        "metrics": {
+            "gi_value": 38,
+            "gi_category": "LOW",
+            "carbs_per_100g": 1.1,
+            "gl_per_serving": 4
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Sok warzywny, minimalnie przetworzony (pasteryzacja)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo niska zawartość węglowodanów; dodaj kroplę oliwy, aby zwiększyć przyswajalność likopenu."
+        }
+    },
+    {
+        "id": "77",
+        "name": "Napój typu Cola (słodzony cukrem)",
+        "english_name": "Cola, Pepsi®, sucrose-sweetened",
+        "category": "Soft drinks",
+        "metrics": {
+            "gi_value": 72,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 11.1,
+            "gl_per_serving": 18
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Napój ultra-przetworzony: woda, cukier, barwniki, kwas fosforowy."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Płynny cukier to szok dla trzustki; pij wyłącznie w sytuacji hipoglikemii lub po bardzo ciężkim treningu."
+        }
+    },
+    {
+        "id": "2150",
+        "name": "Napój izotoniczny (Gatorade)",
+        "english_name": "Gatorade®, orange flavor (USA)",
+        "category": "Sports drinks",
+        "metrics": {
+            "gi_value": 89,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 5.8,
+            "gl_per_serving": 22
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Napój funkcjonalny ultra-przetworzony, zaprojektowany do szybkiego wchłaniania glukozy."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Ekstremalnie wysoki IG jest celowy dla sportowców; jeśli nie biegniesz maratonu, unikaj tego napoju."
+        }
+    },
+    {
+        "id": "111",
+        "name": "Yakult (napój probiotyczny)",
+        "english_name": "Yakult (Yakult Italia)",
+        "category": "Beverages",
+        "metrics": {
+            "gi_value": 51,
+            "gi_category": "LOW",
+            "carbs_per_100g": 14.7,
+            "gl_per_serving": 13
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Słodzony napój mleczny fermentowany (mała buteleczka zawiera dużo cukru)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Traktuj jako deser probiotyczny po posiłku, a nie zdrowy napój do picia na czczo."
+        }
+    },
+    {
+        "id": "2138",
+        "name": "Lucozade (napój energetyczny)",
+        "english_name": "Lucozade®, original (sparkling glucose drink)",
+        "category": "Soft drinks",
+        "metrics": {
+            "gi_value": 95,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 17.0,
+            "gl_per_serving": 24
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Napój gazowany oparty na syropie glukozowym."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "IG bliski czystej glukozy; spożycie bez wysiłku fizycznego prowadzi do gwałtownego skoku insuliny."
+        }
+    },
+    {
+        "id": "3761",
+        "name": "Pizza (domowa/rzemieślnicza)",
+        "english_name": "Pizza, wheat dough with tomato, onion, mozzarella and ham",
+        "category": "Pizza",
+        "metrics": {
+            "gi_value": 56,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 52.1,
+            "gl_per_serving": 20
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Produkt złożony, przetworzony (ciasto, ser, wędlina), ale o tradycyjnym składzie."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Tłuszcz z sera i białko z szynki obniżają IG ciasta; zjedz sałatkę z oliwą przed pierwszym kawałkiem."
+        }
+    },
+    {
+        "id": "2050",
+        "name": "Sushi z łososiem",
+        "english_name": "Sushi, salmon ('I Love Sushi', Sydney, Australia)",
+        "category": "Sushi",
+        "metrics": {
+            "gi_value": 48,
+            "gi_category": "LOW",
+            "carbs_per_100g": 36.2,
+            "gl_per_serving": 17
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Produkt przetworzony (ryż z dodatkiem octu i cukru, surowa ryba)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Ryż do sushi zawiera cukier; zacznij od zupy miso lub edamame, aby spłaszczyć krzywą glukozową."
+        }
+    },
+    {
+        "id": "2049",
+        "name": "Sushi z brązowego ryżu (Wege)",
+        "english_name": "Sushi, brown rice, vegetable and tofu",
+        "category": "Sushi",
+        "metrics": {
+            "gi_value": 45,
+            "gi_category": "LOW",
+            "carbs_per_100g": 20.8,
+            "gl_per_serving": 16
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Zdrowsza wersja sushi z pełnoziarnistym ryżem i tofu."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Błonnik z brązowego ryżu i białko sojowe z tofu to doskonała kombinacja metaboliczna."
+        }
+    },
+    {
+        "id": "3352",
+        "name": "Macaroni and Cheese (z pudełka)",
+        "english_name": "Macaroni and Cheese, boxed (Kraft General Foods)",
+        "category": "Convenience foods",
+        "metrics": {
+            "gi_value": 65,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 28.2,
+            "gl_per_serving": 26
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Danie ultra-przetworzone: makaron z pszenicy i sos serowy w proszku z emulgatorami."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Wysoko przetworzone węglowodany i tłuszcze; dodaj brokuły, aby wprowadzić strukturę i błonnik."
+        }
+    },
+    {
+        "id": "3260",
+        "name": "Makaron Instant (Zupka chińska)",
+        "english_name": "Instant noodles (Mr Noodle, Vancouver, Canada)",
+        "category": "Convenience foods",
+        "metrics": {
+            "gi_value": 48,
+            "gi_category": "LOW",
+            "carbs_per_100g": 20.0,
+            "gl_per_serving": 19
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Ultra-przetworzony produkt (smażony makaron, glutaminian sodu, utwardzone tłuszcze)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Niski IG wynika z dużej ilości tłuszczu przemysłowego; unikaj ze względu na stan zapalny, nie cukier."
+        }
+    },
+    {
+        "id": "3815",
+        "name": "Kurczak z warzywami i ryżem (Stir-fry)",
+        "english_name": "Stir-fried vegetables with chicken and boiled white rice, home made",
+        "category": "Mixed meals",
+        "metrics": {
+            "gi_value": 73,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 20.4,
+            "gl_per_serving": 26
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Domowe danie złożone ze świeżych składników (mięso, warzywa) i ryżu."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Wysoki IG przez biały ryż; zjedz najpierw kurczaka i warzywa, ryż zostaw na koniec posiłku."
+        }
+    },
+    {
+        "id": "3966",
+        "name": "Musaka warzywna",
+        "english_name": "Vegetable moussaka (Sunday’s Catering, Greece)",
+        "category": "Mixed meals",
+        "metrics": {
+            "gi_value": 35,
+            "gi_category": "LOW",
+            "carbs_per_100g": 15.0,
+            "gl_per_serving": 12
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Danie gotowe, ale oparte na warzywach i tłuszczu, co obniża IG."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Świetny wybór; tłuszcz i błonnik z bakłażana skutecznie stabilizują poziom glukozy."
+        }
+    },
+    {
+        "id": "3063",
+        "name": "Spaghetti z sosem mięsnym (z puszki)",
+        "english_name": "Boiled cracked spaghetti served with commercially canned meat sauce",
+        "category": "Convenience foods",
+        "metrics": {
+            "gi_value": 27,
+            "gi_category": "LOW",
+            "carbs_per_100g": 11.3,
+            "gl_per_serving": 3
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Danie gotowe z puszki, ultra-przetworzone sosy często zawierają zagęstniki."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Bardzo niski IG (efekt makaronu durum i tłuszczu); bezpieczne dla cukru, ale uważaj na sól."
+        }
+    },
+    {
+        "id": "3987",
+        "name": "Burrito (jajecznica, fasola, tortilla)",
+        "english_name": "Burrito (scrambled eggs, tomato, onions, vegetable oil, boiled pinto beans and flour tortilla)",
+        "category": "Mixed meals / Mexican",
+        "metrics": {
+            "gi_value": 37,
+            "gi_category": "LOW",
+            "carbs_per_100g": 11.5,
+            "gl_per_serving": 13
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Danie złożone. Obecność fasoli i białka (jaja) znacząco poprawia jakość posiłku."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Doskonały przykład 'mixed meal'; fasola i białko skutecznie buforują węglowodany z tortilli."
+        }
+    },
+    {
+        "id": "3993",
+        "name": "Taco z fasolą (tortilla kukurydziana)",
+        "english_name": "Corn tortilla bean taco, corn tortilla served with refried mashed pinto beans and tomato sauce",
+        "category": "Mixed meals / Mexican",
+        "metrics": {
+            "gi_value": 52,
+            "gi_category": "LOW",
+            "carbs_per_100g": 9.4,
+            "gl_per_serving": 18
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Tradycyjne danie meksykańskie. Kukurydziana tortilla jest lepsza metabolicznie niż pszenna."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Niska gęstość węglowodanów dzięki dużej objętości dodatków; bezpieczna opcja fast-food."
+        }
+    },
+    {
+        "id": "3638",
+        "name": "Frytki (mrożone, z mikrofalówki)",
+        "english_name": "French fries, frozen, reheated in microwave",
+        "category": "Fast Food / Chips",
+        "metrics": {
+            "gi_value": 76,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 19.6,
+            "gl_per_serving": 15
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Ultra-przetworzony produkt (wstępnie smażony, mrożony), odgrzewany w mikrofali."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Wysoki IG i niska jakość tłuszczu; zamień na domowe pieczone łódeczki ziemniaczane ze skórką."
+        }
+    },
+    {
+        "id": "164",
+        "name": "Bułka do hamburgera (pełnoziarnista)",
+        "english_name": "Burger Buns, 100% Whole wheat Gigantico (Canada)",
+        "category": "Fast Food / Burgers",
+        "metrics": {
+            "gi_value": 62,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 39.2,
+            "gl_per_serving": 9
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Przemysłowe pieczywo o długim terminie ważności, typowe dla sieci fast-food."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "W burgerze zjedz najpierw mięso i warzywa (preload), a górną połowę bułki zostaw na talerzu."
+        }
+    },
+    {
+        "id": "1263",
+        "name": "Kurczak z makaronem i warzywami (danie gotowe)",
+        "english_name": "Chicken and noodles with vegetables, strained (Heinz)",
+        "category": "Mixed meals",
+        "metrics": {
+            "gi_value": 67,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 6.0,
+            "gl_per_serving": 7
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Danie gotowe w słoiku/puszce, często rozgotowane składniki (szybsze trawienie)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Miękka konsystencja przyspiesza trawienie; dodaj świeże, chrupiące warzywa dla lepszej sytości."
+        }
+    },
+    {
+        "id": "2160",
+        "name": "Bagietka (baza do kanapek Subway)",
+        "english_name": "Classic French baguette (prepared with wheat flour, ascorbic acid, water, salt & 50 g yeast)",
+        "category": "Sandwiches / Breads",
+        "metrics": {
+            "gi_value": 78,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 59.9,
+            "gl_per_serving": 25
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Pieczywo z białej mąki, szybki wypiek. W sieciach fast-food często zawiera dodatki spulchniające (NOVA 4)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Kolejność ma znaczenie: otwórz kanapkę i zjedz najpierw wkład (mięso/warzywa), a pieczywo zostaw na koniec."
+        }
+    },
+    {
+        "id": "2212",
+        "name": "Bułka do hamburgera",
+        "english_name": "Hamburger bun (Loblaw's, Toronto, Canada)",
+        "category": "Burgers / Fast Food",
+        "metrics": {
+            "gi_value": 61,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 49.7,
+            "gl_per_serving": 19
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Przemysłowe pieczywo o wysokim stopniu przetworzenia, często z dodatkiem cukru i konserwantów."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Zastosuj 'metodę otwartą': wyrzuć górną połowę bułki, by zredukować ładunek glikemiczny o połowę."
+        }
+    },
+    {
+        "id": "GEN_FISH_FINGER",
+        "name": "Paluszki rybne / Nuggetsy (panierowane)",
+        "english_name": "Fish fingers / Breaded meat (Representative)",
+        "category": "Breaded Meat / Fast Food",
+        "metrics": {
+            "gi_value": 38,
+            "gi_category": "LOW",
+            "carbs_per_100g": 20.0,
+            "gl_per_serving": 12
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Produkt ultra-przetworzony: mięso mielone (MOM), panierka z mąki, smażenie wstępne w tłuszczach przemysłowych."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Niski IG wynika z tłuszczu opóźniającego trawienie, ale to pułapka zapalna; skrop cytryną, by obniżyć odpowiedź insulinową."
+        }
+    },
+    {
+        "id": "4001",
+        "name": "Awokado (świeże)",
+        "english_name": "Avocado, raw, flesh only",
+        "category": "Fats / Dips",
+        "metrics": {
+            "gi_value": 10,
+            "gi_category": "LOW",
+            "carbs_per_100g": 1.8,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzony owoc, naturalne źródło zdrowych tłuszczów jednonienasyconych."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Dodaj awokado do kanapki lub burgera; tłuszcz i błonnik fizycznie spowolnią trawienie bułki."
+        }
+    },
+    {
+        "id": "4002",
+        "name": "Oliwki (czarne/zielone)",
+        "english_name": "Olives (canned/jarred)",
+        "category": "Fats / Snacks",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 0.5,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Produkt przetworzony (konserwowany w solance lub oliwie)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Zjedz garść oliwek jako 'przystawkę' przed pizzą; tłuszcz spowolni opróżnianie żołądka przed atakiem węglowodanów."
+        }
+    },
+    {
+        "id": "4003",
+        "name": "Majonez",
+        "english_name": "Mayonnaise (Traditional)",
+        "category": "Sauces",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 0.6,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Produkt ultra-przetworzony (przemysłowe oleje roślinne, emulgatory, konserwanty)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Dodatek majonezu do frytek obniża ich IG (tłuszcz opóźnia trawienie), ale drastycznie zwiększa stan zapalny."
+        }
+    },
+    {
+        "id": "4004",
+        "name": "Sos czosnkowy (restauracyjny)",
+        "english_name": "Garlic sauce (Mayo based)",
+        "category": "Sauces",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 1.5,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Sos na bazie przemysłowego majonezu z dodatkami smakowymi i zagęstnikami."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Tłuszczowa baza sosu buforuje skok cukru z ciasta pizzy, działając jak hamulec metaboliczny."
+        }
+    },
+    {
+        "id": "4005",
+        "name": "Sos jogurtowy",
+        "english_name": "Yoghurt dressing",
+        "category": "Sauces",
+        "metrics": {
+            "gi_value": 19,
+            "gi_category": "LOW",
+            "carbs_per_100g": 4.5,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 3,
+            "explanation": "Produkt przetworzony (jogurt z przyprawami), o ile nie zawiera zagęstników (wtedy grupa 4)."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Białko z jogurtu w połączeniu z tłuszczem to najbezpieczniejszy metabolicznie dodatek do sałatek i mięs."
+        }
+    },
+    {
+        "id": "4006",
+        "name": "Ketchup",
+        "english_name": "Tomato Ketchup",
+        "category": "Sauces",
+        "metrics": {
+            "gi_value": 55,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 26.0,
+            "gl_per_serving": 5
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Ultra-przetworzony sos, w którym cukier jest często drugim składnikiem po pomidorach."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "To nie jest pomidor, to płynny cukier; do frytek zawsze lepszy będzie tłusty majonez niż słodki ketchup."
+        }
+    },
+    {
+        "id": "4007",
+        "name": "Sos BBQ (Barbecue)",
+        "english_name": "Barbecue sauce",
+        "category": "Sauces",
+        "metrics": {
+            "gi_value": 60,
+            "gi_category": "MEDIUM",
+            "carbs_per_100g": 40.0,
+            "gl_per_serving": 8
+        },
+        "quality_score": {
+            "nova_group": 4,
+            "explanation": "Sos o bardzo wysokiej zawartości cukru, melasy lub syropu kukurydzianego."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Metabolicznie działa jak dżem; unikaj maczania mięsa w dużej ilości sosu BBQ."
+        }
+    },
+    {
+        "id": "4008",
+        "name": "Oliwa z oliwek (Extra Virgin)",
+        "english_name": "Olive Oil, Extra Virgin",
+        "category": "Fats / Oils",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 0.0,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Naturalny tłuszcz tłoczony na zimno, bogaty w polifenole."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Złoty standard; dodaj łyżkę do każdego posiłku węglowodanowego, aby naturalnie spłaszczyć krzywą glukozową."
+        }
+    },
+    {
+        "id": "BUFFER_001",
+        "name": "Ocet jabłkowy",
+        "english_name": "Vinegar / Apple Cider Vinegar",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 0.0,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 2,
+            "explanation": "Przetworzony składnik kulinarny (fermentacja)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Kwas octowy inaktywuje enzym alfa-amylazę, co spowalnia rozkład skrobi na glukozę."
+        }
+    },
+    {
+        "id": "BUFFER_002",
+        "name": "Oliwa z oliwek",
+        "english_name": "Olive Oil",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 0.0,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 2,
+            "explanation": "Przetworzony składnik kulinarny (tłuszcz ekstrahowany)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Tłuszcz spowalnia opróżnianie żołądka, co łagodzi skok glukozy po posiłku węglowodanowym."
+        }
+    },
+    {
+        "id": "BUFFER_003",
+        "name": "Masło",
+        "english_name": "Butter",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 0.0,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 2,
+            "explanation": "Przetworzony składnik kulinarny (tłuszcz zwierzęcy)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Tłuszcz spożyty przed węglowodanami opóźnia opróżnianie żołądka i stymuluje wydzielanie inkretym."
+        }
+    },
+    {
+        "id": "BUFFER_004",
+        "name": "Orzechy włoskie",
+        "english_name": "Walnuts",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 24,
+            "gi_category": "LOW",
+            "carbs_per_100g": 13.7,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzona żywność (nasiona)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Kombinacja tłuszczu i białka przed węglowodanami stymuluje GLP-1 i spowalnia trawienie."
+        }
+    },
+    {
+        "id": "BUFFER_005",
+        "name": "Migdały",
+        "english_name": "Almonds",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 24,
+            "gi_category": "LOW",
+            "carbs_per_100g": 21.0,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzona żywność (nasiona)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Białko i błonnik w migdałach tworzą fizyczną barierę spowalniającą wchłanianie glukozy."
+        }
+    },
+    {
+        "id": "BUFFER_006",
+        "name": "Awokado",
+        "english_name": "Avocado",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 10,
+            "gi_category": "LOW",
+            "carbs_per_100g": 8.5,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzona żywność (owoc)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Tłuszcze jednonienasycone opóźniają opróżnianie żołądka, buforując wchłanianie cukrów."
+        }
+    },
+    {
+        "id": "BUFFER_007",
+        "name": "Jogurt grecki naturalny",
+        "english_name": "Greek Yogurt, plain",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 17,
+            "gi_category": "LOW",
+            "carbs_per_100g": 3.6,
+            "gl_per_serving": 1
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Minimalnie przetworzona żywność (fermentacja mlekowa)"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Białko mleka stymuluje wydzielanie insuliny i GLP-1, redukując glikemię poposiłkową."
+        }
+    },
+    {
+        "id": "BUFFER_008",
+        "name": "Jajko gotowane",
+        "english_name": "Hard-boiled egg",
+        "category": "Metabolic Buffers",
+        "metrics": {
+            "gi_value": 0,
+            "gi_category": "LOW",
+            "carbs_per_100g": 1.1,
+            "gl_per_serving": 0
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Nieprzetworzona żywność pochodzenia zwierzęcego"
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Białko jaja spożyte przed posiłkiem zwiększa sytość i stabilizuje poziom cukru."
+        }
+    }
+]

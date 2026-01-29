@@ -158,7 +158,7 @@ class MetabolicEngine:
         print(f"📂 Szukam bazy danych tutaj: {abs_path}")
 
         if not os.path.exists(self.db_path):
-            print(f"❌ BŁĄD: Plik nie istnieje pod wskazaną ścieżką!")
+            print("❌ BŁĄD: Plik nie istnieje pod wskazaną ścieżką!")
             return []
 
         try:

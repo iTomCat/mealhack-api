@@ -1,6 +1,7 @@
 import json
 import os
 from rag_agent import RagBatchAgent
+import datetime
 
 
 # --------------------------------------------------------------
@@ -43,12 +44,18 @@ class MetabolicEngine:
         print("-" * 50)
 
     def _load_json(self, path):
-        """Uniwersalna funkcja do ładowania JSON"""
+        """Uniwersalna funkcja do ładowania JSON (Odporna na puste pliki)"""
         if not os.path.exists(path):
             return []
         try:
             with open(path, 'r', encoding='utf-8') as f:
-                return json.load(f)
+                content = f.read().strip()
+                if not content:  # Jeśli plik jest pusty -> zwróć pustą listę
+                    return []
+                return json.loads(content)
+        except json.JSONDecodeError:
+            print(f"⚠️ Plik {path} uszkodzony/pusty. Rozpoczynam od nowa.")
+            return []
         except Exception as e:
             print(f"❌ Błąd ładowania {path}: {e}")
             return []
@@ -107,7 +114,8 @@ class MetabolicEngine:
                 },
                 "quality_score": item.get('quality_score', {}),
                 "metabolic_intelligence": item.get('metabolic_intelligence', {}),
-                "_vision_context_debug": item.get('original_description', '')
+                "_vision_context_debug": item.get('original_description', ''),
+                "source_origin": item.get('source_origin', 'RAG_AUTO_GENERATED')
             }
 
             meal_products_list.append(clean_product_entry)
@@ -115,8 +123,8 @@ class MetabolicEngine:
         # 3. Tworzymy WRAPPER
         meal_wrapper = {
             "meal_unique_id": source_id,
-            "source_origin": "RAG_AUTO_GENERATED",
-            "timestamp": "auto",
+            "source_origin": "RAG_BATCH_PROCESS",
+            "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "items": meal_products_list
         }
 
@@ -213,6 +221,7 @@ class MetabolicEngine:
 
         # 2. RAG Batch
         if missing_items_map:
+
             # --- NAPRAWA 2: Budujemy listę SŁOWNIKÓW dla rag_agent ---
             rag_input_data = []
             for c_name, data in missing_items_map.items():
