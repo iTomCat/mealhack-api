@@ -114,7 +114,6 @@ class MetabolicEngine:
                 },
                 "quality_score": item.get('quality_score', {}),
                 "metabolic_intelligence": item.get('metabolic_intelligence', {}),
-                "_vision_context_debug": item.get('original_description', ''),
                 "source_origin": item.get('source_origin', 'RAG_AUTO_GENERATED')
             }
 

@@ -2,34 +2,33 @@
     {
         "meal_unique_id": "DupaBiskupa666",
         "source_origin": "RAG_BATCH_PROCESS",
-        "timestamp": "2026-01-29 16:15:48",
+        "timestamp": "2026-01-29 21:22:47",
         "items": [
             {
                 "id": "RAG_RYZ_BIALY",
                 "name": "Ryż biały",
                 "english_name": "White rice",
-                "category": "Grains",
+                "category": "Zboża i węglowodany",
                 "metrics": {
                     "gi_value": 70,
                     "gi_category": "HIGH",
-                    "carbs_per_100g": 34.89,
+                    "carbs_per_100g": 21.2,
                     "gl_per_serving": 0
                 },
                 "quality_score": {
                     "nova_group": 1,
-                    "explanation": "White rice is a staple food, typically only milled to remove the husk and bran, and then cooked. This process is considered minimal processing."
+                    "explanation": "Ryż biały jest produktem minimalnie przetworzonym, poddanym jedynie obróbce mechanicznej (mielenie) i termicznej (gotowanie)."
                 },
                 "metabolic_intelligence": {
                     "fix_tip": "Zjedz najpierw warzywa"
                 },
-                "_vision_context_debug": "",
-                "source_origin": "Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021, NOVA (Classification Sheet)"
+                "source_origin": "Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021., NOVA (Classification Sheet)"
             },
             {
-                "id": "RAG_KURCZAK_W_PANIERCE",
+                "id": "RAG_KURCZAK_PANIERKA_SMAZONE",
                 "name": "Kurczak w panierce Pierś z kurczaka Płatki kukurydziane Panko Smażone na głębokim tłuszczu",
                 "english_name": "Chicken breast, breaded, deep-fried",
-                "category": "Processed Meat",
+                "category": "Mięso i drób",
                 "metrics": {
                     "gi_value": 70,
                     "gi_category": "HIGH",
@@ -38,13 +37,12 @@
                 },
                 "quality_score": {
                     "nova_group": 4,
-                    "explanation": "Product is breaded and deep-fried, which involves industrial processing and ingredients typically found in ultra-processed foods (e.g., refined flours in breading, deep-frying process). It falls under examples like 'pre-prepared poultry and fish nuggets and sticks' in NOVA classification."
+                    "explanation": "Produkt ultra-przetworzony ze względu na panierkę (panko/płatki kukurydziane) oraz smażenie na głębokim tłuszczu, co wiąże się z użyciem przemysłowych składników i technik obróbki. Pasuje do kategorii 'pre-prepared poultry and fish ‘nuggets’ and ‘sticks’' z dokumentacji NOVA."
                 },
                 "metabolic_intelligence": {
                     "fix_tip": "Zjedz najpierw warzywa"
                 },
-                "_vision_context_debug": "",
-                "source_origin": "Estimation based on Vision & General Knowledge, Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021, NOVA (Classification Sheet)"
+                "source_origin": "Estimation based on Vision & General Knowledge, NOVA (Classification Sheet), Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021."
             }
         ]
     }
