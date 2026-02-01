@@ -2,6 +2,7 @@ import json
 import os
 from rag_agent import RagBatchAgent
 import datetime
+from google.cloud import firestore
 
 
 # --------------------------------------------------------------
@@ -37,6 +38,10 @@ class MetabolicEngine:
         # Inicjalizacja Agenta RAG
         self.rag_agent = RagBatchAgent()
 
+        # Inicjalizacja bazy danych (do zapisu review)
+        self.firestore_db = firestore.Client(
+            project="mealhack-app", database="meal-base")
+
         if len(self.db) > 0:
             print(f"✅ BAZA LOKALNA: {len(self.db)} produktów.")
         else:
@@ -60,7 +65,7 @@ class MetabolicEngine:
             print(f"❌ Błąd ładowania {path}: {e}")
             return []
 
-    def _save_to_review_file(self, new_items, source_id="UNKNOWN"):
+    def _save_to_review_file_to_json_locally(self, new_items, source_id="UNKNOWN"):
         """
         Zapisuje produkty z RAG do pliku 'new_products_review.json'.
         STRUKTURA: Grupuje produkty pod konkretnym ID posiłku (Wrapper).
@@ -77,7 +82,6 @@ class MetabolicEngine:
                              for entry in current_review_list}
 
         if source_id in existing_meal_ids:
-            # Tego chcieliśmy: komunikat i przerwanie funkcji
             print(
                 f"INFO: Paczka '{source_id}' już istnieje w pliku review, pominięto zapis.")
             return
@@ -137,6 +141,48 @@ class MetabolicEngine:
         except Exception as e:
             print(f"❌ Błąd zapisu review: {e}")
 
+    def _save_to_review_file(self, rag_results, source_id):
+        """
+        Wysyła produkty wygenerowane przez AI do kolekcji 'new_product_reviews' w Firestore.
+        Ustawia flagę is_verified = False.
+        """
+        if not rag_results:
+            return
+
+        print(
+            f"💾 Zapisuję {len(rag_results)} produktów do poczekalni (Firestore)...")
+
+        # Uchwyt do kolekcji w bazie
+        collection_ref = self.firestore_db.collection('new_product_reviews')
+
+        for item in rag_results:
+            doc_id = item.get('id', 'UNKNOWN_ID')
+
+            # Struktura dokumentu w bazie
+            review_doc = {
+                "id": doc_id,                       # ID (np. RAG_RYZ_BIALY)
+                # Nazwa dla łatwego podglądu
+                "name": item.get('name'),
+
+                # --- KLUCZOWE FLAGI ---
+                "is_verified": False,               # <--- Domyślnie NIEZATWIERDZONE
+
+                # --- METADANE ---
+                "created_at": firestore.SERVER_TIMESTAMP,  # Data dodania
+                "source_meal_id": source_id,        # Z jakiego posiłku to pochodzi
+
+                # --- DANE PRODUKTU ---
+                "product_data": item                # Pełny JSON wygenerowany przez RAG
+            }
+
+            try:
+                # .set() nadpisze dokument jeśli już istnieje (aktualizacja danych),
+                # lub stworzy nowy. To bezpieczne.
+                collection_ref.document(doc_id).set(review_doc)
+                print(f"   - ⏳ [PENDING] Wysłano do weryfikacji: {doc_id}")
+            except Exception as e:
+                print(f"   ❌ Błąd zapisu do Firestore: {e}")
+
     def _clean_product_name(self, raw_name):
         """
         Zmienia: 'Kurczak (Pierś) w płatkach' -> 'Kurczak Pierś w płatkach'
@@ -188,7 +234,7 @@ class MetabolicEngine:
         products_to_process = []
         missing_items_map = {}
 
-        # 1. Weryfikacja
+        # 1. Wery# Pętla po składnikach w przesłanym do analizy posiłku
         for item in ingredients:
             raw_name = item.get('nazwa', 'Unknown')
             weight = item.get('waga_g', 0)
@@ -216,6 +262,14 @@ class MetabolicEngine:
                     'weight': weight,
                     'desc': full_description
                 }
+        # 🛑 --- MIEJSCE NA TWOJĄ BLOKADĘ --- 🛑
+        # print("\n🛑 [TEST MODE] Zatrzymuję przed wysłaniem do RAG.")
+        # print(
+        #     f"✅ Znalezione w bazie lokalnej: {[p['name'] for p in products_to_process]}")
+        # print(
+        #     f"🔸 Nieznane (trafiłyby do RAG): {list(missing_items_map.keys())}")
+
+        # return []
 
         # 2. RAG Batch
         if missing_items_map:
@@ -228,10 +282,10 @@ class MetabolicEngine:
                     'description': data['desc']  # Bogaty opis (do analizy)
                 })
 
-            # Wysyłamy słowniki, a nie same nazwy!
+            # Tłumaczenie nazw i pobranie danych z RAG
             rag_results = self.rag_agent.resolve_batch(rag_input_data)
 
-            # Zapis do review
+            # Zapis do new_products_review.json
             self._save_to_review_file(rag_results, source_id=meal_unique_id)
 
             for rag_item in rag_results:
@@ -321,7 +375,7 @@ if __name__ == "__main__":
         },
         "skladniki": [
             {
-                "nazwa": "Ryż biały",
+                "nazwa": "Biały ryż",
                 "waga_g": 247,
                 "stan": "Gotowany na sypko, biały"
             },

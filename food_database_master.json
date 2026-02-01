@@ -2140,5 +2140,24 @@
         "metabolic_intelligence": {
             "fix_tip": "Białko jaja spożyte przed posiłkiem zwiększa sytość i stabilizuje poziom cukru."
         }
+    },
+    {
+        "id": "RAG_RYZ_BIALY",
+        "name": "Ryż biały",
+        "english_name": "White rice",
+        "category": "Grains/Carbohydrates",
+        "metrics": {
+            "gi_value": 72,
+            "gi_category": "HIGH",
+            "carbs_per_100g": 33.8
+        },
+        "quality_score": {
+            "nova_group": 1,
+            "explanation": "Ryż biały jest produktem minimalnie przetworzonym, powstałym poprzez usunięcie łuski i otrębów z ziarna ryżu."
+        },
+        "metabolic_intelligence": {
+            "fix_tip": "Spożywaj ryż biały po produktach bogatych w błonnik i białko, aby spowolnić wchłanianie glukozy. Schłodzenie ryżu po ugotowaniu i ponowne podgrzanie może zwiększyć zawartość skrobi opornej, obniżając jego indeks glikemiczny."
+        },
+        "source_origin": "Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021., NOVA (Classification Sheet)"
     }
 ]

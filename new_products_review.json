@@ -2,45 +2,52 @@
     {
         "meal_unique_id": "DupaBiskupa666",
         "source_origin": "RAG_BATCH_PROCESS",
-        "timestamp": "2026-01-29 22:56:28",
+        "timestamp": "2026-02-01 16:43:00",
         "items": [
             {
-                "id": "RAG_RYZ_BIALY",
-                "name": "Ryż biały",
-                "english_name": "White rice",
-                "category": "Grains/Carbohydrates",
-                "metrics": {
-                    "gi_value": 72,
-                    "gi_category": "HIGH",
-                    "carbs_per_100g": 33.8
-                },
-                "quality_score": {
-                    "nova_group": 1,
-                    "explanation": "Ryż biały jest produktem minimalnie przetworzonym, powstałym poprzez usunięcie łuski i otrębów z ziarna ryżu."
-                },
-                "metabolic_intelligence": {
-                    "fix_tip": "Spożywaj ryż biały po produktach bogatych w błonnik i białko, aby spowolnić wchłanianie glukozy. Schłodzenie ryżu po ugotowaniu i ponowne podgrzanie może zwiększyć zawartość skrobi opornej, obniżając jego indeks glikemiczny."
-                },
-                "source_origin": "Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021., NOVA (Classification Sheet)"
-            },
-            {
-                "id": "RAG_KURCZAK_PANIERKA",
+                "id": "RAG_Kurczak_w_panierce",
                 "name": "Kurczak w panierce Pierś z kurczaka Płatki kukurydziane Panko Smażone na głębokim tłuszczu",
-                "english_name": "Chicken breast, breaded, deep-fried",
-                "category": "Meat/Processed Food",
+                "english_name": "Deep-fried breaded chicken breast (corn flakes, panko)",
+                "category": "Dania gotowe",
                 "metrics": {
-                    "gi_value": 65,
-                    "gi_category": "MEDIUM",
+                    "gi_value": 75,
+                    "gi_category": "HIGH",
                     "carbs_per_100g": 20.0
                 },
                 "quality_score": {
                     "nova_group": 4,
-                    "explanation": "Produkt jest panierowany i smażony na głębokim tłuszczu, co klasyfikuje go jako ultra-przetworzony ze względu na dodatek składników (panierka, olej) i metody przygotowania."
+                    "explanation": "Produkt jest smażony na głębokim tłuszczu i panierowany (panko, płatki kukurydziane), co klasyfikuje go jako ultra-przetworzony zgodnie z zasadami NOVA (np. 'pre-prepared poultry and fish ‘nuggets’ and ‘sticks’')."
                 },
                 "metabolic_intelligence": {
-                    "fix_tip": "Ze względu na wysoką zawartość tłuszczu i przetworzenie (NOVA 4), zaleca się spożywanie tego produktu sporadycznie i w umiarkowanych ilościach. Łącz go z dużą porcją świeżych warzyw, aby zwiększyć zawartość błonnika i składników odżywczych."
+                    "fix_tip": "Ze względu na wysoką zawartość węglowodanów z panierki i status produktu ultra-przetworzonego (NOVA 4), zaleca się spożywanie w umiarkowanych ilościach. Aby złagodzić odpowiedź glikemiczną, łącz z dużą porcją warzyw bogatych w błonnik i źródłem białka. Unikaj spożywania jako samodzielnej przekąski."
                 },
-                "source_origin": "Estimation based on Vision & General Knowledge, Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021., NOVA (Classification Sheet)"
+                "source_origin": "Atkinson (Tabela1_IG, Tabela2_IG), NOVA (Classification Sheet), Estimation based on Vision & General Knowledge"
+            }
+        ]
+    },
+    {
+        "meal_unique_id": "DupaBiskupa66622",
+        "source_origin": "RAG_BATCH_PROCESS",
+        "timestamp": "2026-02-01 16:45:01",
+        "items": [
+            {
+                "id": "RAG_KURCZAK_W_PANIERCE",
+                "name": "Kurczak w panierce Pierś z kurczaka Płatki kukurydziane Panko Smażone na głębokim tłuszczu",
+                "english_name": "Deep-fried breaded chicken breast (corn flakes, panko)",
+                "category": "Mięso i drób",
+                "metrics": {
+                    "gi_value": 70,
+                    "gi_category": "HIGH",
+                    "carbs_per_100g": 20.0
+                },
+                "quality_score": {
+                    "nova_group": 4,
+                    "explanation": "Produkt jest smażony na głębokim tłuszczu i panierowany (płatki kukurydziane, panko), co klasyfikuje go jako ultra-przetworzony zgodnie z zasadami klasyfikacji NOVA dla produktów smażonych i panierowanych."
+                },
+                "metabolic_intelligence": {
+                    "fix_tip": "Ze względu na wysoką przetworzenie (NOVA 4), smażenie na głębokim tłuszczu oraz panierkę (źródło węglowodanów o wysokim IG), zaleca się ograniczenie porcji. W celu złagodzenia wpływu na glikemię, spożywaj w towarzystwie dużej ilości warzyw bogatych w błonnik oraz źródła białka."
+                },
+                "source_origin": "Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J. International tables of glycemic index and glycemic load values 2021. 27, 29, 106, 130, 134, NOVA (Classification Sheet), Estimation based on Vision & General Knowledge"
             }
         ]
     }

@@ -169,6 +169,11 @@ class RagBatchAgent:
              B) Jeśli produkt to NOVA 4 (ultra-przetworzony) -> Zasugeruj ograniczenie porcji lub łączenie ze zdrowymi dodatkami.
              C) Jeśli produkt jest bezpieczny (NOVA 1, niski IG) -> Wpisz: "Produkt bezpieczny metabolicznie".
 
+        5. WERYFIKACJA STANU (Surowy vs Przetworzony):
+           - Analizuj "OPIS WIZUALNY". Szukaj słów wskazujących na obróbkę: "gotowany" (boiled), "smażony" (fried), "pieczony" (baked), "na parze" (steamed), "duszony".
+           - ZASADA: Jeśli produkt jest poddany obróbce, POBIERAJ DANE DLA WERSJI GOTOWEJ/PRZYGOTOWANEJ.
+           - BEZPIECZEŃSTWO: Dla ryżu, kasz i makaronów wybieraj wersję mającą ~25-35g węglowodanów (hydratyzowane/gotowane), a UNIKAJ wersji "Raw/Dry" (~80g), chyba że opis wyraźnie mówi "produkt surowy".     
+
         DANE WEJŚCIOWE:
         {aggregated_context}
 
